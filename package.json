@@ -17,7 +17,6 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
-    "@types/testing-library__react": "^10.0.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.10.5",
     "next": "15.3.2",
@@ -34,8 +33,7 @@
     "@next/bundle-analyzer": "^15.3.2",
     "@tailwindcss/postcss": "^4",
     "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "^15.0.7",
-    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
     "@types/jest": "^29.5.14",
     "@types/node": "^20",
