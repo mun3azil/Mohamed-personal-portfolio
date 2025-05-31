@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="450" fill="#1E293B"/>
+  
+  <!-- Title -->
+  <rect x="250" y="50" width="300" height="50" rx="8" fill="#0F172A"/>
+  <text x="400" y="85" font-family="Arial" font-size="24" font-weight="bold" fill="white" text-anchor="middle">Work-Life Balance</text>
+  
+  <!-- Subtitle -->
+  <rect x="200" y="110" width="400" height="30" rx="8" fill="#0F172A"/>
+  <text x="400" y="130" font-family="Arial" font-size="14" fill="#94A3B8" text-anchor="middle">Finding Harmony in Tech Career</text>
+  
+  <!-- Balance Scale -->
+  <g transform="translate(400, 225)">
+    <!-- Scale Base -->
+    <rect x="-10" y="80" width="20" height="40" rx="10" fill="#94A3B8"/>
+    <rect x="-60" y="120" width="120" height="10" rx="5" fill="#94A3B8"/>
+    
+    <!-- Scale Arm -->
+    <rect x="-150" y="-5" width="300" height="10" rx="5" fill="#94A3B8"/>
+    <circle cx="0" cy="0" r="15" fill="#94A3B8"/>
+    
+    <!-- Left Pan (Work) -->
+    <g transform="translate(-120, 0)">
+      <path d="M-40 0L40 0L30 30L-30 30Z" fill="#4F46E5"/>
+      <rect x="-30" y="30" width="60" height="5" rx="2.5" fill="#4F46E5"/>
+      
+      <!-- Work Icons -->
+      <rect x="-20" y="10" width="15" height="10" rx="2" fill="#FFFFFF"/>
+      <rect x="5" y="10" width="15" height="10" rx="2" fill="#FFFFFF"/>
+      <rect x="-20" y="5" width="40" height="3" rx="1.5" fill="#FFFFFF"/>
+    </g>
+    
+    <!-- Right Pan (Life) -->
+    <g transform="translate(120, -10)">
+      <path d="M-40 0L40 0L30 30L-30 30Z" fill="#10B981"/>
+      <rect x="-30" y="30" width="60" height="5" rx="2.5" fill="#10B981"/>
+      
+      <!-- Life Icons -->
+      <circle cx="-15" cy="15" r="8" fill="#FFFFFF"/>
+      <path d="M-15 10L-10 15L-15 20L-20 15Z" fill="#10B981"/>
+      
+      <rect x="5" y="10" width="15" height="10" rx="2" fill="#FFFFFF"/>
+      <circle cx="12.5" cy="15" r="3" fill="#10B981"/>
+    </g>
+  </g>
+  
+  <!-- Work Side Illustration -->
+  <g transform="translate(200, 300)">
+    <rect x="-80" y="-60" width="160" height="120" rx="8" fill="#0F172A"/>
+    <text x="0" y="-30" font-family="Arial" font-size="16" font-weight="bold" fill="#4F46E5" text-anchor="middle">Work</text>
+    
+    <!-- Laptop -->
+    <rect x="-30" y="-10" width="60" height="40" rx="4" fill="#334155"/>
+    <rect x="-25" y="-5" width="50" height="30" rx="2" fill="#1E293B"/>
+    <rect x="-20" y="0" width="40" height="3" rx="1.5" fill="#4F46E5"/>
+    <rect x="-20" y="5" width="30" height="3" rx="1.5" fill="#4F46E5"/>
+    <rect x="-20" y="10" width="25" height="3" rx="1.5" fill="#4F46E5"/>
+    
+    <!-- Clock -->
+    <circle cx="50" cy="0" r="15" fill="#334155"/>
+    <circle cx="50" cy="0" r="12" fill="#1E293B"/>
+    <path d="M50 -8V0L56 6" stroke="#4F46E5" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Coffee -->
+    <rect x="-60" y="10" width="15" height="20" rx="3" fill="#F97316"/>
+    <rect x="-58" y="12" width="11" height="16" rx="2" fill="#92400E"/>
+    <path d="M-45 15C-40 15 -40 25 -45 25" stroke="#F97316" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Life Side Illustration -->
+  <g transform="translate(600, 300)">
+    <rect x="-80" y="-60" width="160" height="120" rx="8" fill="#0F172A"/>
+    <text x="0" y="-30" font-family="Arial" font-size="16" font-weight="bold" fill="#10B981" text-anchor="middle">Life</text>
+    
+    <!-- Family -->
+    <circle cx="-30" cy="0" r="12" fill="#10B981"/>
+    <circle cx="-10" cy="0" r="10" fill="#10B981"/>
+    <circle cx="10" cy="0" r="8" fill="#10B981"/>
+    
+    <!-- Home -->
+    <path d="M30 10L50 -10L70 10V30H30V10Z" fill="#8B5CF6"/>
+    <rect x="40" y="15" width="20" height="15" rx="2" fill="#6D28D9"/>
+    <rect x="45" y="20" width="10" height="10" rx="1" fill="#F59E0B"/>
+    
+    <!-- Heart -->
+    <path d="M-50 -20C-50 -30 -35 -30 -30 -20C-25 -30 -10 -30 -10 -20C-10 -10 -30 10 -30 10C-30 10 -50 -10 -50 -20Z" fill="#EF4444"/>
+  </g>
+  
+  <!-- Tips Section -->
+  <g transform="translate(400, 380)">
+    <rect x="-200" y="-30" width="400" height="60" rx="8" fill="#0F172A"/>
+    <text x="0" y="-5" font-family="Arial" font-size="14" fill="#94A3B8" text-anchor="middle">Set boundaries • Take breaks • Prioritize health • Spend time with loved ones</text>
+    <text x="0" y="15" font-family="Arial" font-size="14" fill="#94A3B8" text-anchor="middle">Practice mindfulness • Pursue hobbies • Disconnect after hours</text>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="30" fill="#10B981" opacity="0.3"/>
+  <circle cx="700" cy="100" r="40" fill="#4F46E5" opacity="0.3"/>
+  <circle cx="100" cy="350" r="35" fill="#8B5CF6" opacity="0.3"/>
+  <circle cx="700" cy="350" r="25" fill="#F97316" opacity="0.3"/>
+</svg>

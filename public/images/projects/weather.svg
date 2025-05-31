@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" rx="10" fill="#1E293B"/>
+  
+  <!-- App Window -->
+  <rect x="100" y="50" width="600" height="400" rx="8" fill="#0F172A"/>
+  
+  <!-- Header -->
+  <rect x="100" y="50" width="600" height="60" rx="8" fill="#1E293B"/>
+  <rect x="120" y="70" width="150" height="20" rx="4" fill="#FFFFFF"/>
+  <rect x="550" y="70" width="130" height="30" rx="4" fill="#334155"/>
+  <rect x="560" y="80" width="80" height="10" rx="2" fill="#64748B"/>
+  
+  <!-- Main Weather Display -->
+  <rect x="120" y="130" width="300" height="200" rx="8" fill="#334155"/>
+  
+  <!-- City Name -->
+  <rect x="140" y="150" width="150" height="20" rx="4" fill="#FFFFFF"/>
+  
+  <!-- Temperature -->
+  <text x="140" y="210" font-family="Arial" font-size="40" fill="#FFFFFF">28°C</text>
+  
+  <!-- Weather Icon (Sun) -->
+  <circle cx="250" cy="230" r="30" fill="#F59E0B"/>
+  <line x1="250" y1="180" x2="250" y2="170" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <line x1="250" y1="290" x2="250" y2="280" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <line x1="200" y1="230" x2="190" y2="230" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <line x1="310" y1="230" x2="300" y2="230" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <line x1="215" y1="195" x2="205" y2="185" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <line x1="295" y1="275" x2="285" y2="265" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <line x1="215" y1="265" x2="205" y2="275" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <line x1="295" y1="185" x2="285" y2="195" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Weather Description -->
+  <rect x="140" y="280" width="100" height="15" rx="2" fill="#FFFFFF"/>
+  
+  <!-- Weather Details -->
+  <rect x="140" y="310" width="60" height="10" rx="2" fill="#64748B"/>
+  <rect x="210" y="310" width="40" height="10" rx="2" fill="#FFFFFF"/>
+  
+  <!-- Forecast Cards -->
+  <rect x="440" y="130" width="240" height="60" rx="4" fill="#334155"/>
+  <rect x="450" y="140" width="60" height="10" rx="2" fill="#64748B"/>
+  <rect x="450" y="160" width="40" height="20" rx="2" fill="#FFFFFF"/>
+  <circle cx="530" cy="160" r="15" fill="#F59E0B"/>
+  
+  <rect x="440" y="200" width="240" height="60" rx="4" fill="#334155"/>
+  <rect x="450" y="210" width="60" height="10" rx="2" fill="#64748B"/>
+  <rect x="450" y="230" width="40" height="20" rx="2" fill="#FFFFFF"/>
+  <path d="M520 220C520 212.268 526.268 206 534 206C541.732 206 548 212.268 548 220" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M515 225C515 217.268 521.268 211 529 211C536.732 211 543 217.268 543 225" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M525 225C525 217.268 531.268 211 539 211C546.732 211 553 217.268 553 225" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  
+  <rect x="440" y="270" width="240" height="60" rx="4" fill="#334155"/>
+  <rect x="450" y="280" width="60" height="10" rx="2" fill="#64748B"/>
+  <rect x="450" y="300" width="40" height="20" rx="2" fill="#FFFFFF"/>
+  <path d="M520 290H540" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M525 300H545" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M530 310H550" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Map Section -->
+  <rect x="120" y="350" width="560" height="80" rx="4" fill="#334155"/>
+  <circle cx="150" cy="380" r="10" fill="#4F46E5"/>
+  <circle cx="250" cy="400" r="8" fill="#10B981"/>
+  <circle cx="350" cy="370" r="6" fill="#F59E0B"/>
+  <circle cx="450" cy="390" r="9" fill="#EF4444"/>
+  <circle cx="550" cy="380" r="7" fill="#8B5CF6"/>
+  <path d="M150 380L250 400L350 370L450 390L550 380" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="400" cy="100" r="50" fill="#0EA5E9" opacity="0.1"/>
+  <circle cx="200" cy="400" r="30" fill="#4F46E5" opacity="0.1"/>
+  <circle cx="600" cy="350" r="40" fill="#8B5CF6" opacity="0.1"/>
+</svg>

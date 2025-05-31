@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="50" fill="url(#mongodb-gradient)"/>
+  
+  <!-- MongoDB Logo -->
+  <g transform="translate(50, 50) scale(0.8)">
+    <path d="M0 -20C-8 -20 -15 -12 -15 0C-15 8 -8 15 0 20C8 15 15 8 15 0C15 -12 8 -20 0 -20Z" fill="#4DB33D"/>
+    <path d="M0 -15C-5 -15 -10 -8 -10 0C-10 5 -5 10 0 15C5 10 10 5 10 0C10 -8 5 -15 0 -15Z" fill="#6CAD3E"/>
+    <rect x="-2" y="15" width="4" height="8" rx="2" fill="#4DB33D"/>
+    <ellipse cx="0" cy="0" rx="8" ry="12" fill="#589636"/>
+    <text x="0" y="3" font-family="Arial" font-size="8" font-weight="bold" fill="white" text-anchor="middle">M</text>
+  </g>
+  
+  <!-- Skill Level Indicator -->
+  <circle cx="50" cy="50" r="45" stroke="#4DB33D" stroke-width="3" fill="none" stroke-dasharray="254" stroke-dashoffset="51" transform="rotate(-90 50 50)"/>
+  
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="mongodb-gradient" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1E293B"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+</svg>

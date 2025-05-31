@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" rx="10" fill="#1E293B"/>
+  
+  <!-- Browser Window -->
+  <rect x="100" y="50" width="600" height="400" rx="8" fill="#0F172A"/>
+  <rect x="100" y="50" width="600" height="30" rx="8" fill="#334155"/>
+  
+  <!-- Browser Controls -->
+  <circle cx="120" cy="65" r="5" fill="#EF4444"/>
+  <circle cx="140" cy="65" r="5" fill="#F59E0B"/>
+  <circle cx="160" cy="65" r="5" fill="#10B981"/>
+  
+  <!-- URL Bar -->
+  <rect x="180" y="55" width="400" height="20" rx="4" fill="#1E293B"/>
+  
+  <!-- E-commerce UI -->
+  <!-- Header -->
+  <rect x="120" y="100" width="560" height="50" rx="4" fill="#334155"/>
+  <rect x="140" y="115" width="100" height="20" rx="4" fill="#4F46E5"/>
+  <rect x="500" y="115" width="30" height="20" rx="4" fill="#64748B"/>
+  <rect x="550" y="115" width="30" height="20" rx="4" fill="#64748B"/>
+  <rect x="600" y="115" width="60" height="20" rx="4" fill="#4F46E5"/>
+  
+  <!-- Product Grid -->
+  <!-- Row 1 -->
+  <rect x="120" y="170" width="170" height="170" rx="4" fill="#334155"/>
+  <rect x="130" y="180" width="150" height="100" rx="4" fill="#475569"/>
+  <rect x="130" y="290" width="100" height="15" rx="2" fill="#64748B"/>
+  <rect x="130" y="315" width="60" height="15" rx="2" fill="#4F46E5"/>
+  
+  <rect x="310" y="170" width="170" height="170" rx="4" fill="#334155"/>
+  <rect x="320" y="180" width="150" height="100" rx="4" fill="#475569"/>
+  <rect x="320" y="290" width="100" height="15" rx="2" fill="#64748B"/>
+  <rect x="320" y="315" width="60" height="15" rx="2" fill="#4F46E5"/>
+  
+  <rect x="500" y="170" width="170" height="170" rx="4" fill="#334155"/>
+  <rect x="510" y="180" width="150" height="100" rx="4" fill="#475569"/>
+  <rect x="510" y="290" width="100" height="15" rx="2" fill="#64748B"/>
+  <rect x="510" y="315" width="60" height="15" rx="2" fill="#4F46E5"/>
+  
+  <!-- Shopping Cart Icon -->
+  <circle cx="615" cy="125" r="10" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <path d="M610 125H620M615 120V130" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="400" cy="400" r="50" fill="#4F46E5" opacity="0.1"/>
+  <circle cx="200" cy="350" r="30" fill="#0EA5E9" opacity="0.1"/>
+  <circle cx="600" cy="380" r="40" fill="#8B5CF6" opacity="0.1"/>
+</svg>

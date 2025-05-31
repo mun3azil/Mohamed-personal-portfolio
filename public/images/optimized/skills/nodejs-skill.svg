@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="50" fill="url(#nodejs-gradient)"/>
+  
+  <!-- Node.js Logo -->
+  <g transform="translate(50, 50) scale(0.7)">
+    <path d="M0 -25L20 -12.5V12.5L0 25L-20 12.5V-12.5L0 -25Z" fill="#68A063"/>
+    <path d="M0 -25L20 -12.5V0L0 12.5V-25Z" fill="#8CC84B"/>
+    <path d="M0 12.5L-20 0V12.5L0 25V12.5Z" fill="#8CC84B"/>
+    <circle cx="0" cy="0" r="8" fill="#FFFFFF"/>
+    <text x="0" y="3" font-family="Arial" font-size="8" font-weight="bold" fill="#68A063" text-anchor="middle">JS</text>
+  </g>
+  
+  <!-- Skill Level Indicator -->
+  <circle cx="50" cy="50" r="45" stroke="#68A063" stroke-width="3" fill="none" stroke-dasharray="254" stroke-dashoffset="38" transform="rotate(-90 50 50)"/>
+  
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="nodejs-gradient" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1E293B"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+</svg>

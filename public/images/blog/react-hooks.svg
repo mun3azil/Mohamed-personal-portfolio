@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" rx="10" fill="#1E293B"/>
+  
+  <!-- Code Editor Window -->
+  <rect x="100" y="50" width="600" height="400" rx="8" fill="#0F172A"/>
+  <rect x="100" y="50" width="600" height="30" rx="8" fill="#334155"/>
+  
+  <!-- Editor Controls -->
+  <circle cx="120" cy="65" r="5" fill="#EF4444"/>
+  <circle cx="140" cy="65" r="5" fill="#F59E0B"/>
+  <circle cx="160" cy="65" r="5" fill="#10B981"/>
+  
+  <!-- File Tabs -->
+  <rect x="180" y="50" width="120" height="30" rx="4" fill="#1E293B"/>
+  <rect x="190" y="60" width="100" height="10" rx="2" fill="#94A3B8"/>
+  <rect x="310" y="50" width="120" height="30" rx="4" fill="#0F172A"/>
+  <rect x="320" y="60" width="100" height="10" rx="2" fill="#64748B"/>
+  
+  <!-- Code Editor Content -->
+  <!-- Line Numbers -->
+  <rect x="100" y="80" width="30" height="370" fill="#1E293B"/>
+  <text x="115" y="110" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">1</text>
+  <text x="115" y="130" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">2</text>
+  <text x="115" y="150" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">3</text>
+  <text x="115" y="170" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">4</text>
+  <text x="115" y="190" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">5</text>
+  <text x="115" y="210" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">6</text>
+  <text x="115" y="230" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">7</text>
+  <text x="115" y="250" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">8</text>
+  <text x="115" y="270" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">9</text>
+  <text x="115" y="290" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">10</text>
+  <text x="115" y="310" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">11</text>
+  <text x="115" y="330" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">12</text>
+  <text x="115" y="350" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">13</text>
+  <text x="115" y="370" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">14</text>
+  <text x="115" y="390" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">15</text>
+  <text x="115" y="410" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">16</text>
+  <text x="115" y="430" font-family="monospace" font-size="12" fill="#64748B" text-anchor="middle">17</text>
+  
+  <!-- React Hooks Code -->
+  <!-- Line 1 -->
+  <text x="140" y="110" font-family="monospace" font-size="12" fill="#8B5CF6">import</text>
+  <text x="185" y="110" font-family="monospace" font-size="12" fill="#94A3B8">{</text>
+  <text x="190" y="110" font-family="monospace" font-size="12" fill="#0EA5E9">useState</text>
+  <text x="240" y="110" font-family="monospace" font-size="12" fill="#94A3B8">,</text>
+  <text x="245" y="110" font-family="monospace" font-size="12" fill="#0EA5E9">useEffect</text>
+  <text x="305" y="110" font-family="monospace" font-size="12" fill="#94A3B8">}</text>
+  <text x="310" y="110" font-family="monospace" font-size="12" fill="#8B5CF6">from</text>
+  <text x="340" y="110" font-family="monospace" font-size="12" fill="#F59E0B">'react'</text>
+  <text x="380" y="110" font-family="monospace" font-size="12" fill="#94A3B8">;</text>
+  
+  <!-- Line 2 -->
+  <text x="140" y="130" font-family="monospace" font-size="12" fill="#94A3B8"></text>
+  
+  <!-- Line 3 -->
+  <text x="140" y="150" font-family="monospace" font-size="12" fill="#8B5CF6">function</text>
+  <text x="190" y="150" font-family="monospace" font-size="12" fill="#0EA5E9">Counter</text>
+  <text x="240" y="150" font-family="monospace" font-size="12" fill="#94A3B8">() {</text>
+  
+  <!-- Line 4 -->
+  <text x="150" y="170" font-family="monospace" font-size="12" fill="#8B5CF6">const</text>
+  <text x="185" y="170" font-family="monospace" font-size="12" fill="#94A3B8">[</text>
+  <text x="190" y="170" font-family="monospace" font-size="12" fill="#0EA5E9">count</text>
+  <text x="225" y="170" font-family="monospace" font-size="12" fill="#94A3B8">,</text>
+  <text x="230" y="170" font-family="monospace" font-size="12" fill="#0EA5E9">setCount</text>
+  <text x="280" y="170" font-family="monospace" font-size="12" fill="#94A3B8">] =</text>
+  <text x="295" y="170" font-family="monospace" font-size="12" fill="#0EA5E9">useState</text>
+  <text x="345" y="170" font-family="monospace" font-size="12" fill="#94A3B8">(</text>
+  <text x="350" y="170" font-family="monospace" font-size="12" fill="#F59E0B">0</text>
+  <text x="355" y="170" font-family="monospace" font-size="12" fill="#94A3B8">);</text>
+  
+  <!-- Line 5 -->
+  <text x="140" y="190" font-family="monospace" font-size="12" fill="#94A3B8"></text>
+  
+  <!-- Line 6 -->
+  <text x="150" y="210" font-family="monospace" font-size="12" fill="#0EA5E9">useEffect</text>
+  <text x="205" y="210" font-family="monospace" font-size="12" fill="#94A3B8">(() => {</text>
+  
+  <!-- Line 7 -->
+  <text x="160" y="230" font-family="monospace" font-size="12" fill="#8B5CF6">const</text>
+  <text x="195" y="230" font-family="monospace" font-size="12" fill="#0EA5E9">timer</text>
+  <text x="230" y="230" font-family="monospace" font-size="12" fill="#94A3B8">=</text>
+  <text x="240" y="230" font-family="monospace" font-size="12" fill="#0EA5E9">setInterval</text>
+  <text x="305" y="230" font-family="monospace" font-size="12" fill="#94A3B8">(() => {</text>
+  
+  <!-- Line 8 -->
+  <text x="170" y="250" font-family="monospace" font-size="12" fill="#0EA5E9">setCount</text>
+  <text x="220" y="250" font-family="monospace" font-size="12" fill="#94A3B8">(</text>
+  <text x="225" y="250" font-family="monospace" font-size="12" fill="#0EA5E9">prevCount</text>
+  <text x="285" y="250" font-family="monospace" font-size="12" fill="#94A3B8">=></text>
+  <text x="300" y="250" font-family="monospace" font-size="12" fill="#0EA5E9">prevCount</text>
+  <text x="360" y="250" font-family="monospace" font-size="12" fill="#94A3B8">+</text>
+  <text x="370" y="250" font-family="monospace" font-size="12" fill="#F59E0B">1</text>
+  <text x="375" y="250" font-family="monospace" font-size="12" fill="#94A3B8">);</text>
+  
+  <!-- Line 9 -->
+  <text x="160" y="270" font-family="monospace" font-size="12" fill="#94A3B8">},</text>
+  <text x="175" y="270" font-family="monospace" font-size="12" fill="#F59E0B">1000</text>
+  <text x="205" y="270" font-family="monospace" font-size="12" fill="#94A3B8">);</text>
+  
+  <!-- Line 10 -->
+  <text x="160" y="290" font-family="monospace" font-size="12" fill="#94A3B8"></text>
+  
+  <!-- Line 11 -->
+  <text x="160" y="310" font-family="monospace" font-size="12" fill="#8B5CF6">return</text>
+  <text x="200" y="310" font-family="monospace" font-size="12" fill="#94A3B8">() => {</text>
+  
+  <!-- Line 12 -->
+  <text x="170" y="330" font-family="monospace" font-size="12" fill="#0EA5E9">clearInterval</text>
+  <text x="245" y="330" font-family="monospace" font-size="12" fill="#94A3B8">(</text>
+  <text x="250" y="330" font-family="monospace" font-size="12" fill="#0EA5E9">timer</text>
+  <text x="280" y="330" font-family="monospace" font-size="12" fill="#94A3B8">);</text>
+  
+  <!-- Line 13 -->
+  <text x="160" y="350" font-family="monospace" font-size="12" fill="#94A3B8">};</text>
+  
+  <!-- Line 14 -->
+  <text x="150" y="370" font-family="monospace" font-size="12" fill="#94A3B8">}, []);</text>
+  
+  <!-- Line 15 -->
+  <text x="140" y="390" font-family="monospace" font-size="12" fill="#94A3B8"></text>
+  
+  <!-- Line 16 -->
+  <text x="150" y="410" font-family="monospace" font-size="12" fill="#8B5CF6">return</text>
+  <text x="190" y="410" font-family="monospace" font-size="12" fill="#94A3B8">(</text>
+  <text x="195" y="410" font-family="monospace" font-size="12" fill="#F59E0B">&lt;div&gt;</text>
+  <text x="230" y="410" font-family="monospace" font-size="12" fill="#94A3B8">Count:</text>
+  <text x="270" y="410" font-family="monospace" font-size="12" fill="#94A3B8">{</text>
+  <text x="275" y="410" font-family="monospace" font-size="12" fill="#0EA5E9">count</text>
+  <text x="305" y="410" font-family="monospace" font-size="12" fill="#94A3B8">}</text>
+  <text x="310" y="410" font-family="monospace" font-size="12" fill="#F59E0B">&lt;/div&gt;</text>
+  <text x="350" y="410" font-family="monospace" font-size="12" fill="#94A3B8">);</text>
+  
+  <!-- Line 17 -->
+  <text x="140" y="430" font-family="monospace" font-size="12" fill="#94A3B8">}</text>
+  
+  <!-- React Logo -->
+  <g transform="translate(550, 250) scale(0.5)">
+    <circle cx="0" cy="0" r="50" fill="#61DAFB" fill-opacity="0.2"/>
+    <ellipse cx="0" cy="0" rx="18" ry="50" stroke="#61DAFB" stroke-width="4" fill="none"/>
+    <ellipse cx="0" cy="0" rx="18" ry="50" stroke="#61DAFB" stroke-width="4" fill="none" transform="rotate(60)"/>
+    <ellipse cx="0" cy="0" rx="18" ry="50" stroke="#61DAFB" stroke-width="4" fill="none" transform="rotate(120)"/>
+    <circle cx="0" cy="0" r="10" fill="#61DAFB"/>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <circle cx="400" cy="250" r="150" fill="#4F46E5" opacity="0.05"/>
+  <circle cx="200" cy="350" r="100" fill="#0EA5E9" opacity="0.05"/>
+  <circle cx="600" cy="150" r="120" fill="#8B5CF6" opacity="0.05"/>
+</svg>

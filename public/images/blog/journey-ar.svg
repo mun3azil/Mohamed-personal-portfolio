@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" rx="10" fill="#1E293B"/>
+  
+  <!-- Journey Path -->
+  <path d="M700 400 C650 350, 600 450, 550 350 C500 250, 450 400, 400 300 C350 200, 300 350, 250 250 C200 150, 150 250, 100 200" 
+        stroke="#4F46E5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  
+  <!-- Milestones -->
+  <circle cx="700" cy="400" r="15" fill="#0EA5E9"/>
+  <text x="700" y="440" font-family="Arial" font-size="12" fill="#FFFFFF" text-anchor="middle" direction="rtl" lang="ar">البداية</text>
+  
+  <circle cx="550" cy="350" r="15" fill="#8B5CF6"/>
+  <text x="550" y="390" font-family="Arial" font-size="12" fill="#FFFFFF" text-anchor="middle" direction="rtl" lang="ar">HTML/CSS</text>
+  
+  <circle cx="400" cy="300" r="15" fill="#10B981"/>
+  <text x="400" y="340" font-family="Arial" font-size="12" fill="#FFFFFF" text-anchor="middle" direction="rtl" lang="ar">جافاسكريبت</text>
+  
+  <circle cx="250" cy="250" r="15" fill="#F59E0B"/>
+  <text x="250" y="290" font-family="Arial" font-size="12" fill="#FFFFFF" text-anchor="middle" direction="rtl" lang="ar">رياكت</text>
+  
+  <circle cx="100" cy="200" r="15" fill="#EF4444"/>
+  <text x="100" y="240" font-family="Arial" font-size="12" fill="#FFFFFF" text-anchor="middle" direction="rtl" lang="ar">فول ستاك</text>
+  
+  <!-- Laptop Icon -->
+  <rect x="350" y="100" width="100" height="70" rx="5" fill="#334155"/>
+  <rect x="360" y="110" width="80" height="50" rx="2" fill="#0F172A"/>
+  <rect x="330" y="170" width="140" height="10" rx="5" fill="#334155"/>
+  
+  <!-- Code Symbols -->
+  <text x="400" y="140" font-family="monospace" font-size="20" fill="#4F46E5" text-anchor="middle">&lt;/&gt;</text>
+  
+  <!-- Mountain Peaks (Challenges) -->
+  <path d="M650 350 L600 300 L550 350" stroke="#64748B" stroke-width="3" fill="none"/>
+  <path d="M500 300 L450 250 L400 300" stroke="#64748B" stroke-width="3" fill="none"/>
+  <path d="M350 250 L300 200 L250 250" stroke="#64748B" stroke-width="3" fill="none"/>
+  <path d="M200 200 L150 150 L100 200" stroke="#64748B" stroke-width="3" fill="none"/>
+  
+  <!-- Stars (Achievements) -->
+  <path d="M600 200 L605 210 L615 210 L607 217 L610 227 L600 222 L590 227 L593 217 L585 210 L595 210 Z" fill="#F59E0B"/>
+  <path d="M450 150 L455 160 L465 160 L457 167 L460 177 L450 172 L440 177 L443 167 L435 160 L445 160 Z" fill="#F59E0B"/>
+  <path d="M300 100 L305 110 L315 110 L307 117 L310 127 L300 122 L290 127 L293 117 L285 110 L295 110 Z" fill="#F59E0B"/>
+  <path d="M150 100 L155 110 L165 110 L157 117 L160 127 L150 122 L140 127 L143 117 L135 110 L145 110 Z" fill="#F59E0B"/>
+  
+  <!-- Arabic Title -->
+  <text x="400" y="50" font-family="Arial" font-size="24" fill="#FFFFFF" text-anchor="middle" direction="rtl" lang="ar">رحلتي في تعلم البرمجة</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="400" cy="250" r="150" fill="#4F46E5" opacity="0.05"/>
+  <circle cx="200" cy="350" r="100" fill="#0EA5E9" opacity="0.05"/>
+  <circle cx="600" cy="150" r="120" fill="#8B5CF6" opacity="0.05"/>
+</svg>

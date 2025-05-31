@@ -1,0 +1,77 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Mohamed",
+    "title": "Full Stack Developer",
+    "description": "I build modern, responsive, and high-performance web applications.",
+    "cta": {
+      "projects": "Explore Projects",
+      "contact": "Contact Me"
+    }
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Get to know me better",
+    "description": "I'm a passionate Full Stack Developer with expertise in building modern web applications. I specialize in creating responsive, user-friendly interfaces and robust backend systems.",
+    "skills": {
+      "title": "My Skills",
+      "frontend": "Frontend Development",
+      "backend": "Backend Development",
+      "database": "Database Management",
+      "devops": "DevOps"
+    },
+    "experience": {
+      "title": "Experience",
+      "years": "Years of Experience",
+      "projects": "Projects Completed",
+      "clients": "Happy Clients"
+    }
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Check out my recent work",
+    "filters": {
+      "all": "All",
+      "web": "Web",
+      "mobile": "Mobile",
+      "design": "Design"
+    },
+    "viewProject": "View Project",
+    "viewCode": "View Code"
+  },
+  "blog": {
+    "title": "My Blog",
+    "subtitle": "Latest articles and insights",
+    "readMore": "Read More",
+    "categories": {
+      "all": "All",
+      "technical": "Technical",
+      "personal": "Personal",
+      "learning": "Learning Journey"
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Let's work together",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message"
+    },
+    "success": "Your message has been sent successfully!",
+    "error": "There was an error sending your message. Please try again."
+  },
+  "footer": {
+    "copyright": "© 2025 Mohamed. All rights reserved.",
+    "madeWith": "Made with ❤️ using Next.js and TailwindCSS"
+  }
+}

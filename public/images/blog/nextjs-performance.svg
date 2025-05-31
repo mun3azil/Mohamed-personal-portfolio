@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="500" rx="10" fill="#1E293B"/>
+  
+  <!-- Next.js Logo -->
+  <g transform="translate(400, 150) scale(1.5)">
+    <path d="M50 0H0V50H50V0Z" fill="white"/>
+    <path d="M29.7534 40.7344H35.1562L24.2188 25.9375L35.1562 10.1562H29.7534L20.8203 22.7344H19.1797V10.1562H14.8438V40.7344H19.1797V27.1875H20.8203L29.7534 40.7344Z" fill="black"/>
+  </g>
+  
+  <!-- Performance Metrics -->
+  <rect x="150" y="250" width="500" height="150" rx="8" fill="#0F172A"/>
+  
+  <!-- Metric Headers -->
+  <text x="180" y="280" font-family="Arial" font-size="14" fill="#FFFFFF">Metric</text>
+  <text x="350" y="280" font-family="Arial" font-size="14" fill="#FFFFFF">Before</text>
+  <text x="500" y="280" font-family="Arial" font-size="14" fill="#FFFFFF">After</text>
+  <text x="600" y="280" font-family="Arial" font-size="14" fill="#FFFFFF">Improvement</text>
+  
+  <!-- Divider -->
+  <line x1="150" y1="290" x2="650" y2="290" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Metrics Row 1 -->
+  <text x="180" y="320" font-family="Arial" font-size="14" fill="#FFFFFF">First Contentful Paint</text>
+  <text x="350" y="320" font-family="Arial" font-size="14" fill="#EF4444">2.4s</text>
+  <text x="500" y="320" font-family="Arial" font-size="14" fill="#10B981">0.8s</text>
+  <text x="600" y="320" font-family="Arial" font-size="14" fill="#10B981">67%</text>
+  
+  <!-- Metrics Row 2 -->
+  <text x="180" y="350" font-family="Arial" font-size="14" fill="#FFFFFF">Time to Interactive</text>
+  <text x="350" y="350" font-family="Arial" font-size="14" fill="#EF4444">3.8s</text>
+  <text x="500" y="350" font-family="Arial" font-size="14" fill="#10B981">1.2s</text>
+  <text x="600" y="350" font-family="Arial" font-size="14" fill="#10B981">68%</text>
+  
+  <!-- Metrics Row 3 -->
+  <text x="180" y="380" font-family="Arial" font-size="14" fill="#FFFFFF">Bundle Size</text>
+  <text x="350" y="380" font-family="Arial" font-size="14" fill="#EF4444">456KB</text>
+  <text x="500" y="380" font-family="Arial" font-size="14" fill="#10B981">187KB</text>
+  <text x="600" y="380" font-family="Arial" font-size="14" fill="#10B981">59%</text>
+  
+  <!-- Performance Gauge -->
+  <circle cx="400" cy="450" r="30" stroke="#334155" stroke-width="5" fill="none"/>
+  <path d="M400 450 L400 420" stroke="#10B981" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="400" cy="450" r="5" fill="#FFFFFF"/>
+  
+  <!-- Optimization Icons -->
+  <g transform="translate(180, 200)">
+    <rect width="40" height="40" rx="5" fill="#334155"/>
+    <text x="20" y="25" font-family="Arial" font-size="20" fill="#FFFFFF" text-anchor="middle">📦</text>
+    <text x="20" y="55" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle">Code Splitting</text>
+  </g>
+  
+  <g transform="translate(260, 200)">
+    <rect width="40" height="40" rx="5" fill="#334155"/>
+    <text x="20" y="25" font-family="Arial" font-size="20" fill="#FFFFFF" text-anchor="middle">🖼️</text>
+    <text x="20" y="55" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle">Image Opt</text>
+  </g>
+  
+  <g transform="translate(340, 200)">
+    <rect width="40" height="40" rx="5" fill="#334155"/>
+    <text x="20" y="25" font-family="Arial" font-size="20" fill="#FFFFFF" text-anchor="middle">⚡</text>
+    <text x="20" y="55" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle">SSR</text>
+  </g>
+  
+  <g transform="translate(420, 200)">
+    <rect width="40" height="40" rx="5" fill="#334155"/>
+    <text x="20" y="25" font-family="Arial" font-size="20" fill="#FFFFFF" text-anchor="middle">📱</text>
+    <text x="20" y="55" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle">Responsive</text>
+  </g>
+  
+  <g transform="translate(500, 200)">
+    <rect width="40" height="40" rx="5" fill="#334155"/>
+    <text x="20" y="25" font-family="Arial" font-size="20" fill="#FFFFFF" text-anchor="middle">🔄</text>
+    <text x="20" y="55" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle">Caching</text>
+  </g>
+  
+  <g transform="translate(580, 200)">
+    <rect width="40" height="40" rx="5" fill="#334155"/>
+    <text x="20" y="25" font-family="Arial" font-size="20" fill="#FFFFFF" text-anchor="middle">🔍</text>
+    <text x="20" y="55" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle">SEO</text>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <circle cx="400" cy="250" r="150" fill="#4F46E5" opacity="0.05"/>
+  <circle cx="200" cy="350" r="100" fill="#0EA5E9" opacity="0.05"/>
+  <circle cx="600" cy="150" r="120" fill="#8B5CF6" opacity="0.05"/>
+</svg>

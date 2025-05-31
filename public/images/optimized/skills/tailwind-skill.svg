@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="50" fill="url(#tailwind-gradient)"/>
+  
+  <!-- Tailwind CSS Logo -->
+  <g transform="translate(50, 50) scale(0.7)">
+    <path d="M0 -20C-10 -20 -15 -10 -15 0C-15 10 -10 15 0 15C5 15 10 12.5 15 10C20 7.5 25 5 30 5C35 5 40 10 40 15C40 20 35 25 30 25C25 25 20 22.5 15 20C10 17.5 5 15 0 15C-10 15 -15 5 -15 -5C-15 -15 -10 -20 0 -20Z" fill="#06B6D4"/>
+    <path d="M0 -5C-5 -5 -7.5 0 -7.5 5C-7.5 10 -5 12.5 0 12.5C2.5 12.5 5 11.25 7.5 10C10 8.75 12.5 7.5 15 7.5C17.5 7.5 20 10 20 12.5C20 15 17.5 17.5 15 17.5C12.5 17.5 10 16.25 7.5 15C5 13.75 2.5 12.5 0 12.5C-5 12.5 -7.5 7.5 -7.5 2.5C-7.5 -2.5 -5 -5 0 -5Z" fill="#0891B2"/>
+  </g>
+  
+  <!-- Skill Level Indicator -->
+  <circle cx="50" cy="50" r="45" stroke="#06B6D4" stroke-width="3" fill="none" stroke-dasharray="254" stroke-dashoffset="13" transform="rotate(-90 50 50)"/>
+  
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="tailwind-gradient" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1E293B"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+</svg>

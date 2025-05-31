@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle with Gradient -->
+  <circle cx="200" cy="200" r="200" fill="url(#gradient-bg)"/>
+  
+  <!-- Face Mask -->
+  <mask id="face-mask" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400">
+    <circle cx="200" cy="200" r="200" fill="#FFFFFF"/>
+  </mask>
+  
+  <!-- Face Elements (masked) -->
+  <g mask="url(#face-mask)">
+    <!-- Neck -->
+    <path d="M160 350V420H240V350C240 350 220 360 200 360C180 360 160 350 160 350Z" fill="#F8C9A3"/>
+    
+    <!-- Head Shape -->
+    <path d="M200 350C255.228 350 300 305.228 300 250C300 194.772 255.228 150 200 150C144.772 150 100 194.772 100 250C100 305.228 144.772 350 200 350Z" fill="#F8C9A3"/>
+    
+    <!-- Hair -->
+    <path d="M100 250C100 194.772 144.772 150 200 150C255.228 150 300 194.772 300 250C300 250 300 180 300 150C300 120 280 100 240 80C200 60 160 80 120 100C80 120 80 180 100 250Z" fill="#3A3238"/>
+    
+    <!-- Eyebrows -->
+    <path d="M150 210C150 210 160 205 170 205C180 205 190 210 190 210" stroke="#3A3238" stroke-width="5" stroke-linecap="round"/>
+    <path d="M210 210C210 210 220 205 230 205C240 205 250 210 250 210" stroke="#3A3238" stroke-width="5" stroke-linecap="round"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="170" cy="225" rx="10" ry="8" fill="#3A3238"/>
+    <ellipse cx="230" cy="225" rx="10" ry="8" fill="#3A3238"/>
+    
+    <!-- Eye Highlights -->
+    <circle cx="173" cy="222" r="3" fill="white"/>
+    <circle cx="233" cy="222" r="3" fill="white"/>
+    
+    <!-- Nose -->
+    <path d="M200 240C200 240 190 260 200 270C210 260 200 240 200 240Z" fill="#E5B193"/>
+    
+    <!-- Mouth -->
+    <path d="M170 290C170 290 185 300 200 300C215 300 230 290 230 290" stroke="#C97D60" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Glasses -->
+    <rect x="145" y="215" width="50" height="25" rx="10" stroke="#555555" stroke-width="3" fill="none"/>
+    <rect x="205" y="215" width="50" height="25" rx="10" stroke="#555555" stroke-width="3" fill="none"/>
+    <path d="M195 225H205" stroke="#555555" stroke-width="3"/>
+    
+    <!-- Shirt Collar -->
+    <path d="M160 350C160 350 180 370 200 370C220 370 240 350 240 350" fill="#4F46E5"/>
+    <path d="M160 350L140 380" stroke="#4F46E5" stroke-width="10" stroke-linecap="round"/>
+    <path d="M240 350L260 380" stroke="#4F46E5" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <circle cx="80" cy="80" r="15" fill="#4F46E5" opacity="0.5"/>
+  <circle cx="320" cy="100" r="20" fill="#0EA5E9" opacity="0.5"/>
+  <circle cx="300" cy="320" r="25" fill="#8B5CF6" opacity="0.5"/>
+  <circle cx="100" cy="300" r="18" fill="#F97316" opacity="0.5"/>
+  
+  <!-- Code Symbol Decoration -->
+  <g opacity="0.7" transform="translate(330, 50) rotate(15)">
+    <path d="M0 0L10 10L0 20" stroke="#4F46E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M30 0L20 10L30 20" stroke="#4F46E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M10 25L20 -5" stroke="#4F46E5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="gradient-bg" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#E2E8F0"/>
+    </linearGradient>
+  </defs>
+</svg>

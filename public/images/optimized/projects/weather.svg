@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with Gradient -->
+  <rect width="800" height="600" fill="url(#weather-bg)"/>
+  
+  <!-- App Container -->
+  <rect x="100" y="50" width="600" height="500" rx="20" fill="#0F172A" fill-opacity="0.9"/>
+  
+  <!-- City Search Bar -->
+  <rect x="150" y="80" width="500" height="50" rx="25" fill="#1E293B"/>
+  <rect x="180" y="95" width="200" height="20" rx="4" fill="#94A3B8"/>
+  <circle cx="630" cy="105" r="15" fill="#4F46E5"/>
+  <path d="M630 100V110M625 105H635" stroke="white" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Current Weather -->
+  <rect x="150" y="150" width="500" height="150" rx="10" fill="#1E293B"/>
+  
+  <!-- City Name -->
+  <rect x="180" y="170" width="200" height="30" rx="4" fill="#FFFFFF"/>
+  
+  <!-- Current Temperature -->
+  <text x="180" y="240" font-family="Arial" font-size="60" font-weight="bold" fill="#FFFFFF">24°</text>
+  
+  <!-- Weather Icon -->
+  <circle cx="550" cy="225" r="50" fill="#F59E0B"/>
+  <path d="M550 175V185M550 265V275M500 225H510M590 225H600M515 190L525 200M575 250L585 260M575 190L565 200M525 250L515 260" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Weather Details -->
+  <rect x="180" y="260" width="100" height="20" rx="4" fill="#94A3B8"/>
+  
+  <!-- Forecast -->
+  <rect x="150" y="320" width="500" height="200" rx="10" fill="#1E293B"/>
+  
+  <!-- Forecast Title -->
+  <rect x="180" y="340" width="150" height="20" rx="4" fill="#FFFFFF"/>
+  
+  <!-- Forecast Days -->
+  <rect x="180" y="380" width="80" height="120" rx="8" fill="#334155"/>
+  <rect x="195" y="400" width="50" height="20" rx="4" fill="#FFFFFF"/>
+  <circle cx="220" cy="450" r="20" fill="#F59E0B"/>
+  <rect x="205" y="480" width="30" height="15" rx="4" fill="#94A3B8"/>
+  
+  <rect x="280" y="380" width="80" height="120" rx="8" fill="#334155"/>
+  <rect x="295" y="400" width="50" height="20" rx="4" fill="#FFFFFF"/>
+  <path d="M320 430C320 430 310 440 320 450C330 440 320 430 320 430Z" fill="#0EA5E9" stroke="#0EA5E9" stroke-width="2"/>
+  <path d="M310 450C310 450 320 460 330 450" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round"/>
+  <rect x="305" y="480" width="30" height="15" rx="4" fill="#94A3B8"/>
+  
+  <rect x="380" y="380" width="80" height="120" rx="8" fill="#334155"/>
+  <rect x="395" y="400" width="50" height="20" rx="4" fill="#FFFFFF"/>
+  <path d="M420 430C405 430 405 450 420 450C435 450 435 430 420 430Z" fill="#94A3B8" stroke="#94A3B8" stroke-width="2"/>
+  <rect x="405" y="480" width="30" height="15" rx="4" fill="#94A3B8"/>
+  
+  <rect x="480" y="380" width="80" height="120" rx="8" fill="#334155"/>
+  <rect x="495" y="400" width="50" height="20" rx="4" fill="#FFFFFF"/>
+  <circle cx="520" cy="450" r="20" fill="#F59E0B"/>
+  <rect x="505" y="480" width="30" height="15" rx="4" fill="#94A3B8"/>
+  
+  <!-- Weather Chart -->
+  <path d="M180 340H650M180 360H650M180 380H650M180 400H650M180 420H650M180 440H650M180 460H650M180 480H650" stroke="#334155" stroke-width="1"/>
+  
+  <!-- Decorative Elements -->
+  <circle cx="700" cy="100" r="30" fill="#4F46E5" opacity="0.3"/>
+  <circle cx="100" cy="500" r="40" fill="#0EA5E9" opacity="0.3"/>
+  <circle cx="750" cy="450" r="25" fill="#F59E0B" opacity="0.3"/>
+  
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="weather-bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E3A8A"/>
+    </linearGradient>
+  </defs>
+</svg>

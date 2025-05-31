@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="200" cy="200" r="200" fill="url(#paint0_linear_1_2)"/>
+  <mask id="mask0_1_2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="400">
+    <circle cx="200" cy="200" r="200" fill="#C4C4C4"/>
+  </mask>
+  <g mask="url(#mask0_1_2)">
+    <!-- Stylized head shape -->
+    <path d="M200 350C255.228 350 300 305.228 300 250C300 194.772 255.228 150 200 150C144.772 150 100 194.772 100 250C100 305.228 144.772 350 200 350Z" fill="#F8B195"/>
+    
+    <!-- Neck -->
+    <path d="M160 350V400H240V350C240 350 220 360 200 360C180 360 160 350 160 350Z" fill="#F8B195"/>
+    
+    <!-- Hair -->
+    <path d="M100 250C100 194.772 144.772 150 200 150C255.228 150 300 194.772 300 250V200C300 144.772 255.228 100 200 100C144.772 100 100 144.772 100 200V250Z" fill="#333333"/>
+    
+    <!-- Shirt collar -->
+    <path d="M160 350L140 400H160V350Z" fill="#4F46E5"/>
+    <path d="M240 350L260 400H240V350Z" fill="#4F46E5"/>
+    
+    <!-- Shirt -->
+    <path d="M140 400H260V450H140V400Z" fill="#4F46E5"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="170" cy="230" rx="10" ry="10" fill="#333333"/>
+    <ellipse cx="230" cy="230" rx="10" ry="10" fill="#333333"/>
+    
+    <!-- Eyebrows -->
+    <path d="M155 215C155 215 165 210 175 215" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+    <path d="M225 215C225 215 235 210 245 215" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Smile -->
+    <path d="M180 270C180 270 190 280 200 280C210 280 220 270 220 270" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Glasses -->
+    <circle cx="170" cy="230" r="20" stroke="#555555" stroke-width="3"/>
+    <circle cx="230" cy="230" r="20" stroke="#555555" stroke-width="3"/>
+    <path d="M190 230H210" stroke="#555555" stroke-width="3"/>
+    <path d="M150 230L130 225" stroke="#555555" stroke-width="3"/>
+    <path d="M250 230L270 225" stroke="#555555" stroke-width="3"/>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="200" cy="200" r="198" stroke="url(#paint1_linear_1_2)" stroke-width="4"/>
+  
+  <defs>
+    <linearGradient id="paint0_linear_1_2" x1="200" y1="0" x2="200" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F46E5" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#4F46E5" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="paint1_linear_1_2" x1="200" y1="0" x2="200" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F46E5"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+  </defs>
+</svg>

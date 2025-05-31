@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main Circle with Gradient -->
+  <circle cx="250" cy="250" r="250" fill="url(#avatar-gradient)"/>
+  
+  <!-- Avatar Mask -->
+  <mask id="avatar-mask" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="500" height="500">
+    <circle cx="250" cy="250" r="250" fill="white"/>
+  </mask>
+  
+  <!-- Avatar Elements (masked) -->
+  <g mask="url(#avatar-mask)">
+    <!-- Background Pattern -->
+    <rect x="0" y="0" width="500" height="500" fill="#0F172A" opacity="0.05"/>
+    <g opacity="0.1">
+      <rect x="0" y="0" width="50" height="50" fill="#4F46E5"/>
+      <rect x="100" y="0" width="50" height="50" fill="#4F46E5"/>
+      <rect x="200" y="0" width="50" height="50" fill="#4F46E5"/>
+      <rect x="300" y="0" width="50" height="50" fill="#4F46E5"/>
+      <rect x="400" y="0" width="50" height="50" fill="#4F46E5"/>
+      <rect x="50" y="50" width="50" height="50" fill="#4F46E5"/>
+      <rect x="150" y="50" width="50" height="50" fill="#4F46E5"/>
+      <rect x="250" y="50" width="50" height="50" fill="#4F46E5"/>
+      <rect x="350" y="50" width="50" height="50" fill="#4F46E5"/>
+      <rect x="450" y="50" width="50" height="50" fill="#4F46E5"/>
+      <!-- Repeat pattern -->
+      <rect x="0" y="100" width="50" height="50" fill="#4F46E5"/>
+      <rect x="100" y="100" width="50" height="50" fill="#4F46E5"/>
+      <rect x="200" y="100" width="50" height="50" fill="#4F46E5"/>
+      <rect x="300" y="100" width="50" height="50" fill="#4F46E5"/>
+      <rect x="400" y="100" width="50" height="50" fill="#4F46E5"/>
+      <rect x="50" y="150" width="50" height="50" fill="#4F46E5"/>
+      <rect x="150" y="150" width="50" height="50" fill="#4F46E5"/>
+      <rect x="250" y="150" width="50" height="50" fill="#4F46E5"/>
+      <rect x="350" y="150" width="50" height="50" fill="#4F46E5"/>
+      <rect x="450" y="150" width="50" height="50" fill="#4F46E5"/>
+    </g>
+    
+    <!-- Character -->
+    <!-- Head -->
+    <circle cx="250" cy="200" r="100" fill="#F8C9A3"/>
+    
+    <!-- Hair -->
+    <path d="M150 200C150 144.772 194.772 100 250 100C305.228 100 350 144.772 350 200C350 200 350 130 350 100C350 70 330 50 290 30C250 10 210 30 170 50C130 70 130 130 150 200Z" fill="#3A3238"/>
+    
+    <!-- Eyes -->
+    <ellipse cx="210" cy="180" rx="15" ry="10" fill="#3A3238"/>
+    <ellipse cx="290" cy="180" rx="15" ry="10" fill="#3A3238"/>
+    
+    <!-- Eye Highlights -->
+    <circle cx="215" cy="175" r="5" fill="white"/>
+    <circle cx="295" cy="175" r="5" fill="white"/>
+    
+    <!-- Eyebrows -->
+    <path d="M190 160C190 160 200 155 210 155C220 155 230 160 230 160" stroke="#3A3238" stroke-width="6" stroke-linecap="round"/>
+    <path d="M270 160C270 160 280 155 290 155C300 155 310 160 310 160" stroke="#3A3238" stroke-width="6" stroke-linecap="round"/>
+    
+    <!-- Nose -->
+    <path d="M250 190C250 190 240 220 250 230C260 220 250 190 250 190Z" fill="#E5B193"/>
+    
+    <!-- Mouth -->
+    <path d="M220 250C220 250 235 260 250 260C265 260 280 250 280 250" stroke="#C97D60" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Neck -->
+    <rect x="230" y="280" width="40" height="50" fill="#F8C9A3"/>
+    
+    <!-- Shirt -->
+    <path d="M150 330H350V500H150V330Z" fill="#4F46E5"/>
+    <path d="M230 330V280H270V330" fill="#4F46E5"/>
+    
+    <!-- Collar -->
+    <path d="M230 330L200 350L230 370" fill="#3730A3"/>
+    <path d="M270 330L300 350L270 370" fill="#3730A3"/>
+    
+    <!-- Tech Elements -->
+    <!-- React Logo -->
+    <g transform="translate(180, 400) scale(0.5)">
+      <circle cx="50" cy="50" r="10" fill="#61DAFB"/>
+      <ellipse cx="50" cy="50" rx="40" ry="15" stroke="#61DAFB" stroke-width="3" fill="none" transform="rotate(0 50 50)"/>
+      <ellipse cx="50" cy="50" rx="40" ry="15" stroke="#61DAFB" stroke-width="3" fill="none" transform="rotate(60 50 50)"/>
+      <ellipse cx="50" cy="50" rx="40" ry="15" stroke="#61DAFB" stroke-width="3" fill="none" transform="rotate(120 50 50)"/>
+    </g>
+    
+    <!-- TypeScript Logo -->
+    <g transform="translate(280, 400) scale(0.5)">
+      <rect x="20" y="20" width="60" height="60" fill="#3178C6"/>
+      <path d="M40 60V80H30V60H20V50H50V60H40Z" fill="white"/>
+      <path d="M60 50H70V60C70 70 65 80 55 80V70C60 70 60 65 60 60V50Z" fill="white"/>
+    </g>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <circle cx="100" cy="100" r="20" fill="#4F46E5" opacity="0.5"/>
+  <circle cx="400" cy="120" r="25" fill="#0EA5E9" opacity="0.5"/>
+  <circle cx="380" cy="400" r="30" fill="#8B5CF6" opacity="0.5"/>
+  <circle cx="120" cy="380" r="22" fill="#F97316" opacity="0.5"/>
+  
+  <!-- Code Symbols -->
+  <g opacity="0.7" transform="translate(420, 60) rotate(15)">
+    <path d="M0 0L15 15L0 30" stroke="#4F46E5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M45 0L30 15L45 30" stroke="#4F46E5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15 35L30 -5" stroke="#4F46E5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="avatar-gradient" x1="0" y1="0" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#E2E8F0"/>
+    </linearGradient>
+  </defs>
+</svg>
