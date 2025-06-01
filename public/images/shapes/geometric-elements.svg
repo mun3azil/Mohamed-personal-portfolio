@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients for geometric shapes -->
+    <linearGradient id="hexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#38bdf8;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <linearGradient id="triangleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <linearGradient id="circleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#fb923c;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <linearGradient id="squareGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#34d399;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <!-- Glow effects -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#020617"/>
+  
+  <!-- Hexagonal shapes -->
+  <g opacity="0.7">
+    <!-- Large hexagon -->
+    <polygon points="200,100 250,130 250,190 200,220 150,190 150,130" 
+             fill="url(#hexGrad)" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="rotate" values="0 200 160;360 200 160" dur="20s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Medium hexagon -->
+    <polygon points="400,200 430,220 430,260 400,280 370,260 370,220" 
+             fill="url(#hexGrad)" opacity="0.6" filter="url(#softGlow)">
+      <animateTransform attributeName="transform" type="rotate" values="0 400 240;-360 400 240" dur="15s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Small hexagon -->
+    <polygon points="600,150 615,160 615,180 600,190 585,180 585,160" 
+             fill="url(#hexGrad)" opacity="0.4">
+      <animateTransform attributeName="transform" type="rotate" values="0 600 170;360 600 170" dur="10s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+  
+  <!-- Triangular elements -->
+  <g opacity="0.6">
+    <!-- Upward triangle -->
+    <polygon points="800,100 900,250 700,250" fill="url(#triangleGrad)" filter="url(#glow)">
+      <animateTransform attributeName="transform" type="rotate" values="0 800 200;360 800 200" dur="25s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Downward triangle -->
+    <polygon points="1000,300 1050,200 950,200" fill="url(#triangleGrad)" opacity="0.5" filter="url(#softGlow)">
+      <animateTransform attributeName="transform" type="rotate" values="0 1000 250;-360 1000 250" dur="18s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Small triangles -->
+    <polygon points="150,400 175,350 125,350" fill="url(#triangleGrad)" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <polygon points="300,500 325,450 275,450" fill="url(#triangleGrad)" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+  
+  <!-- Circular elements -->
+  <g opacity="0.5">
+    <!-- Large circle -->
+    <circle cx="500" cy="500" r="80" fill="url(#circleGrad)" filter="url(#glow)">
+      <animate attributeName="r" values="80;100;80" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Medium circles -->
+    <circle cx="700" cy="400" r="40" fill="url(#circleGrad)" opacity="0.7" filter="url(#softGlow)">
+      <animate attributeName="r" values="40;50;40" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="900" cy="500" r="25" fill="url(#circleGrad)" opacity="0.5">
+      <animate attributeName="r" values="25;35;25" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- Small floating circles -->
+    <circle cx="100" cy="600" r="15" fill="url(#circleGrad)" opacity="0.4">
+      <animate attributeName="cy" values="600;580;600" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="1100" cy="150" r="12" fill="url(#circleGrad)" opacity="0.3">
+      <animate attributeName="cy" values="150;130;150" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Square and rectangular elements -->
+  <g opacity="0.4">
+    <!-- Rotated square -->
+    <rect x="200" y="600" width="60" height="60" fill="url(#squareGrad)" filter="url(#glow)" transform="rotate(45 230 630)">
+      <animateTransform attributeName="transform" type="rotate" values="45 230 630;405 230 630" dur="12s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Rectangle -->
+    <rect x="800" y="600" width="100" height="40" rx="5" fill="url(#squareGrad)" opacity="0.6" filter="url(#softGlow)">
+      <animate attributeName="width" values="100;120;100" dur="7s" repeatCount="indefinite"/>
+    </animate>
+    
+    <!-- Small squares -->
+    <rect x="50" y="50" width="20" height="20" fill="url(#squareGrad)" opacity="0.5" transform="rotate(30 60 60)">
+      <animateTransform attributeName="transform" type="rotate" values="30 60 60;390 60 60" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    
+    <rect x="1050" y="400" width="25" height="25" fill="url(#squareGrad)" opacity="0.4" transform="rotate(15 1062 412)">
+      <animateTransform attributeName="transform" type="rotate" values="15 1062 412;375 1062 412" dur="10s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Complex geometric patterns -->
+  <g opacity="0.3">
+    <!-- Star shape -->
+    <polygon points="600,600 610,630 640,630 618,648 628,678 600,660 572,678 582,648 560,630 590,630" 
+             fill="url(#hexGrad)" filter="url(#softGlow)">
+      <animateTransform attributeName="transform" type="rotate" values="0 600 639;360 600 639" dur="15s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Diamond -->
+    <polygon points="400,700 450,750 400,800 350,750" fill="url(#triangleGrad)" filter="url(#softGlow)">
+      <animateTransform attributeName="transform" type="rotate" values="0 400 750;360 400 750" dur="20s" repeatCount="indefinite"/>
+    </polygon>
+    
+    <!-- Octagon -->
+    <polygon points="1000,700 1020,680 1040,680 1060,700 1060,720 1040,740 1020,740 1000,720" 
+             fill="url(#circleGrad)" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" values="0 1030 710;360 1030 710" dur="18s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+</svg>

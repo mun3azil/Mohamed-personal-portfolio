@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Portal from './Portal';
+import styles from './Tooltip.module.css';
 
 
 type TooltipPosition = 'top' | 'right' | 'bottom' | 'left';
@@ -276,41 +277,21 @@ const Tooltip: React.FC<TooltipProps> = ({
     return { top, left };
   };
   
-  // Get tooltip arrow position and style
-  const getArrowStyle = () => {
-    const baseStyle: React.CSSProperties = {
-      position: 'absolute',
-      width: '8px',
-      height: '8px',
-      transform: 'rotate(45deg)',
-      backgroundColor: 'inherit',
-    };
-    
+  // Get tooltip arrow CSS class based on position
+  const getArrowClassName = () => {
+    const baseClass = styles.tooltipArrow;
+
     switch (position) {
       case 'top':
-        return {
-          ...baseStyle,
-          bottom: '-4px',
-          left: 'calc(50% - 4px)',
-        };
+        return `${baseClass} ${styles.tooltipArrowTop}`;
       case 'right':
-        return {
-          ...baseStyle,
-          left: '-4px',
-          top: 'calc(50% - 4px)',
-        };
+        return `${baseClass} ${styles.tooltipArrowRight}`;
       case 'bottom':
-        return {
-          ...baseStyle,
-          top: '-4px',
-          left: 'calc(50% - 4px)',
-        };
+        return `${baseClass} ${styles.tooltipArrowBottom}`;
       case 'left':
-        return {
-          ...baseStyle,
-          right: '-4px',
-          top: 'calc(50% - 4px)',
-        };
+        return `${baseClass} ${styles.tooltipArrowLeft}`;
+      default:
+        return `${baseClass} ${styles.tooltipArrowTop}`;
     }
   };
   
@@ -328,7 +309,7 @@ const Tooltip: React.FC<TooltipProps> = ({
       if (typeof (children as any).ref === 'function') {
         (children as any).ref(node);
       } else if ((children as any).ref) {
-        ((children as any).ref as React.MutableRefObject<HTMLElement>).current = node;
+        ((children as any).ref as React.RefObject<HTMLElement>).current = node;
       }
     },
     'aria-describedby': isVisible && id ? id : undefined,
@@ -372,7 +353,7 @@ const Tooltip: React.FC<TooltipProps> = ({
           ref={tooltipRef}
           id={id}
           role="tooltip"
-          className={`absolute z-50 rounded-md bg-gray-800 px-2 py-1 text-sm text-white shadow-md dark:bg-gray-700 ${className}`}
+          className={`${styles.tooltip} ${className}`}
           style={{
             ...getTooltipPosition(),
             maxWidth: typeof maxWidth === 'number' ? `${maxWidth}px` : maxWidth,
@@ -387,7 +368,7 @@ const Tooltip: React.FC<TooltipProps> = ({
           data-testid="tooltip"
         >
           {content}
-          <div style={getArrowStyle()} data-testid="tooltip-arrow" />
+          <div className={getArrowClassName()} data-testid="tooltip-arrow" />
         </motion.div>
       )}
     </AnimatePresence>

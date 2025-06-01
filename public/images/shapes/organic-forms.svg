@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Organic gradients -->
+    <radialGradient id="organicGrad1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.6" />
+      <stop offset="70%" style="stop-color:#38bdf8;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0" />
+    </radialGradient>
+    
+    <radialGradient id="organicGrad2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.6" />
+      <stop offset="70%" style="stop-color:#a78bfa;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0" />
+    </radialGradient>
+    
+    <radialGradient id="organicGrad3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.6" />
+      <stop offset="70%" style="stop-color:#fb923c;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#f97316;stop-opacity:0" />
+    </radialGradient>
+    
+    <linearGradient id="flowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.5" />
+      <stop offset="50%" style="stop-color:#34d399;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <!-- Blur filters for organic feel -->
+    <filter id="organicBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    
+    <filter id="lightBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#020617"/>
+  
+  <!-- Large organic blobs -->
+  <g opacity="0.7">
+    <!-- Flowing blob 1 -->
+    <path d="M100 200 Q200 150 300 200 Q350 250 320 350 Q280 400 200 380 Q120 360 80 300 Q60 250 100 200 Z" 
+          fill="url(#organicGrad1)" filter="url(#organicBlur)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;30,20;0,0" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="d" values="M100 200 Q200 150 300 200 Q350 250 320 350 Q280 400 200 380 Q120 360 80 300 Q60 250 100 200 Z;
+                                        M120 180 Q220 130 320 180 Q370 230 340 330 Q300 380 220 360 Q140 340 100 280 Q80 230 120 180 Z;
+                                        M100 200 Q200 150 300 200 Q350 250 320 350 Q280 400 200 380 Q120 360 80 300 Q60 250 100 200 Z" 
+               dur="15s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Flowing blob 2 -->
+    <path d="M800 100 Q900 80 1000 120 Q1050 180 1020 280 Q980 350 900 330 Q820 310 780 250 Q750 200 800 100 Z" 
+          fill="url(#organicGrad2)" filter="url(#organicBlur)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;-20,30;0,0" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="d" values="M800 100 Q900 80 1000 120 Q1050 180 1020 280 Q980 350 900 330 Q820 310 780 250 Q750 200 800 100 Z;
+                                        M820 120 Q920 100 1020 140 Q1070 200 1040 300 Q1000 370 920 350 Q840 330 800 270 Q770 220 820 120 Z;
+                                        M800 100 Q900 80 1000 120 Q1050 180 1020 280 Q980 350 900 330 Q820 310 780 250 Q750 200 800 100 Z" 
+               dur="18s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Flowing blob 3 -->
+    <path d="M500 500 Q600 450 700 500 Q750 550 720 650 Q680 700 600 680 Q520 660 480 600 Q460 550 500 500 Z" 
+          fill="url(#organicGrad3)" filter="url(#organicBlur)">
+      <animateTransform attributeName="transform" type="translate" values="0,0;25,-15;0,0" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="d" values="M500 500 Q600 450 700 500 Q750 550 720 650 Q680 700 600 680 Q520 660 480 600 Q460 550 500 500 Z;
+                                        M480 520 Q580 470 680 520 Q730 570 700 670 Q660 720 580 700 Q500 680 460 620 Q440 570 480 520 Z;
+                                        M500 500 Q600 450 700 500 Q750 550 720 650 Q680 700 600 680 Q520 660 480 600 Q460 550 500 500 Z" 
+               dur="20s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Medium organic shapes -->
+  <g opacity="0.5">
+    <!-- Amoeba-like shape 1 -->
+    <path d="M200 600 Q250 580 300 600 Q320 630 310 660 Q290 680 260 675 Q230 670 210 650 Q190 630 200 600 Z" 
+          fill="url(#organicGrad1)" filter="url(#softBlur)">
+      <animateTransform attributeName="transform" type="rotate" values="0 250 640;360 250 640" dur="25s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Amoeba-like shape 2 -->
+    <path d="M900 600 Q950 580 1000 600 Q1020 630 1010 660 Q990 680 960 675 Q930 670 910 650 Q890 630 900 600 Z" 
+          fill="url(#organicGrad2)" filter="url(#softBlur)">
+      <animateTransform attributeName="transform" type="rotate" values="0 950 640;-360 950 640" dur="22s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Kidney shape -->
+    <path d="M400 300 Q450 280 500 300 Q520 320 510 350 Q500 380 470 390 Q440 385 420 365 Q400 345 400 300 Z" 
+          fill="url(#flowGrad)" filter="url(#softBlur)">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="8s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Leaf-like shape -->
+    <path d="M700 300 Q750 280 800 300 Q820 330 800 360 Q780 380 750 375 Q720 370 705 345 Q690 320 700 300 Z" 
+          fill="url(#organicGrad3)" filter="url(#softBlur)">
+      <animateTransform attributeName="transform" type="scale" values="1;1.2;1" dur="10s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Small organic elements -->
+  <g opacity="0.4">
+    <!-- Droplet shapes -->
+    <path d="M150 100 Q160 90 170 100 Q175 110 170 120 Q165 125 160 123 Q155 121 152 115 Q149 109 150 100 Z" 
+          fill="url(#organicGrad1)" filter="url(#lightBlur)">
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="5s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M1050 100 Q1060 90 1070 100 Q1075 110 1070 120 Q1065 125 1060 123 Q1055 121 1052 115 Q1049 109 1050 100 Z" 
+          fill="url(#organicGrad2)" filter="url(#lightBlur)">
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="6s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M50 500 Q60 490 70 500 Q75 510 70 520 Q65 525 60 523 Q55 521 52 515 Q49 509 50 500 Z" 
+          fill="url(#organicGrad3)" filter="url(#lightBlur)">
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="7s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M1150 500 Q1160 490 1170 500 Q1175 510 1170 520 Q1165 525 1160 523 Q1155 521 1152 515 Q1149 509 1150 500 Z" 
+          fill="url(#flowGrad)" filter="url(#lightBlur)">
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="4s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Flowing lines and curves -->
+  <g opacity="0.3" stroke-width="3" fill="none">
+    <!-- Curved line 1 -->
+    <path d="M0 400 Q200 350 400 400 Q600 450 800 400 Q1000 350 1200 400" 
+          stroke="url(#organicGrad1)" filter="url(#lightBlur)">
+      <animate attributeName="d" values="M0 400 Q200 350 400 400 Q600 450 800 400 Q1000 350 1200 400;
+                                        M0 420 Q200 370 400 420 Q600 470 800 420 Q1000 370 1200 420;
+                                        M0 400 Q200 350 400 400 Q600 450 800 400 Q1000 350 1200 400" 
+               dur="12s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Curved line 2 -->
+    <path d="M0 200 Q300 150 600 200 Q900 250 1200 200" 
+          stroke="url(#organicGrad2)" filter="url(#lightBlur)">
+      <animate attributeName="d" values="M0 200 Q300 150 600 200 Q900 250 1200 200;
+                                        M0 180 Q300 130 600 180 Q900 230 1200 180;
+                                        M0 200 Q300 150 600 200 Q900 250 1200 200" 
+               dur="15s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Curved line 3 -->
+    <path d="M0 600 Q400 550 800 600 Q1000 625 1200 600" 
+          stroke="url(#organicGrad3)" filter="url(#lightBlur)">
+      <animate attributeName="d" values="M0 600 Q400 550 800 600 Q1000 625 1200 600;
+                                        M0 620 Q400 570 800 620 Q1000 645 1200 620;
+                                        M0 600 Q400 550 800 600 Q1000 625 1200 600" 
+               dur="18s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Floating organic particles -->
+  <g opacity="0.6">
+    <!-- Small floating blobs -->
+    <ellipse cx="100" cy="300" rx="8" ry="12" fill="url(#organicGrad1)" filter="url(#lightBlur)">
+      <animate attributeName="cy" values="300;280;300" dur="6s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 100 300;360 100 300" dur="8s" repeatCount="indefinite"/>
+    </ellipse>
+    
+    <ellipse cx="300" cy="150" rx="6" ry="10" fill="url(#organicGrad2)" filter="url(#lightBlur)">
+      <animate attributeName="cy" values="150;130;150" dur="7s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 300 150;-360 300 150" dur="10s" repeatCount="indefinite"/>
+    </ellipse>
+    
+    <ellipse cx="1100" cy="300" rx="7" ry="11" fill="url(#organicGrad3)" filter="url(#lightBlur)">
+      <animate attributeName="cy" values="300;280;300" dur="8s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 1100 300;360 1100 300" dur="12s" repeatCount="indefinite"/>
+    </ellipse>
+    
+    <ellipse cx="600" cy="750" rx="5" ry="8" fill="url(#flowGrad)" filter="url(#lightBlur)">
+      <animate attributeName="cy" values="750;730;750" dur="5s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="0 600 750;360 600 750" dur="9s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+</svg>

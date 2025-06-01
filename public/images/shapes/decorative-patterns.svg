@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Pattern gradients -->
+    <linearGradient id="patternGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#38bdf8;stop-opacity:0.3" />
+    </linearGradient>
+    
+    <linearGradient id="patternGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#a78bfa;stop-opacity:0.3" />
+    </linearGradient>
+    
+    <linearGradient id="patternGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#fb923c;stop-opacity:0.3" />
+    </linearGradient>
+    
+    <!-- Repeating patterns -->
+    <pattern id="circlePattern" x="0" y="0" width="60" height="60" patternUnits="userSpaceOnUse">
+      <circle cx="30" cy="30" r="8" fill="url(#patternGrad1)" opacity="0.4"/>
+      <circle cx="30" cy="30" r="4" fill="url(#patternGrad1)" opacity="0.6"/>
+    </pattern>
+    
+    <pattern id="hexPattern" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <polygon points="40,10 60,25 60,55 40,70 20,55 20,25" fill="none" stroke="url(#patternGrad2)" stroke-width="1" opacity="0.3"/>
+    </pattern>
+    
+    <pattern id="wavePattern" x="0" y="0" width="100" height="50" patternUnits="userSpaceOnUse">
+      <path d="M0 25 Q25 10 50 25 Q75 40 100 25" stroke="url(#patternGrad3)" stroke-width="2" fill="none" opacity="0.4"/>
+    </pattern>
+    
+    <!-- Filters -->
+    <filter id="patternGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#020617"/>
+  
+  <!-- Mandala-style pattern -->
+  <g transform="translate(200, 200)" opacity="0.6">
+    <circle cx="0" cy="0" r="100" fill="none" stroke="url(#patternGrad1)" stroke-width="2" filter="url(#patternGlow)"/>
+    <circle cx="0" cy="0" r="80" fill="none" stroke="url(#patternGrad1)" stroke-width="1" opacity="0.7"/>
+    <circle cx="0" cy="0" r="60" fill="none" stroke="url(#patternGrad1)" stroke-width="1" opacity="0.5"/>
+    <circle cx="0" cy="0" r="40" fill="none" stroke="url(#patternGrad1)" stroke-width="1" opacity="0.3"/>
+    
+    <!-- Radiating lines -->
+    <g stroke="url(#patternGrad1)" stroke-width="1" opacity="0.4">
+      <line x1="0" y1="-100" x2="0" y2="-60"/>
+      <line x1="0" y1="100" x2="0" y2="60"/>
+      <line x1="-100" y1="0" x2="-60" y2="0"/>
+      <line x1="100" y1="0" x2="60" y2="0"/>
+      <line x1="-71" y1="-71" x2="-42" y2="-42"/>
+      <line x1="71" y1="71" x2="42" y2="42"/>
+      <line x1="71" y1="-71" x2="42" y2="-42"/>
+      <line x1="-71" y1="71" x2="-42" y2="42"/>
+    </g>
+    
+    <!-- Decorative dots -->
+    <g fill="url(#patternGrad1)" opacity="0.6">
+      <circle cx="0" cy="-80" r="3"/>
+      <circle cx="0" cy="80" r="3"/>
+      <circle cx="-80" cy="0" r="3"/>
+      <circle cx="80" cy="0" r="3"/>
+      <circle cx="-57" cy="-57" r="2"/>
+      <circle cx="57" cy="57" r="2"/>
+      <circle cx="57" cy="-57" r="2"/>
+      <circle cx="-57" cy="57" r="2"/>
+    </g>
+    
+    <animateTransform attributeName="transform" type="rotate" values="0 200 200;360 200 200" dur="30s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Geometric flower pattern -->
+  <g transform="translate(800, 200)" opacity="0.5">
+    <!-- Petals -->
+    <g fill="url(#patternGrad2)" filter="url(#softBlur)">
+      <ellipse cx="0" cy="-40" rx="15" ry="30" transform="rotate(0)"/>
+      <ellipse cx="0" cy="-40" rx="15" ry="30" transform="rotate(45)"/>
+      <ellipse cx="0" cy="-40" rx="15" ry="30" transform="rotate(90)"/>
+      <ellipse cx="0" cy="-40" rx="15" ry="30" transform="rotate(135)"/>
+      <ellipse cx="0" cy="-40" rx="15" ry="30" transform="rotate(180)"/>
+      <ellipse cx="0" cy="-40" rx="15" ry="30" transform="rotate(225)"/>
+      <ellipse cx="0" cy="-40" rx="15" ry="30" transform="rotate(270)"/>
+      <ellipse cx="0" cy="-40" rx="15" ry="30" transform="rotate(315)"/>
+    </g>
+    
+    <!-- Center -->
+    <circle cx="0" cy="0" r="20" fill="url(#patternGrad2)" opacity="0.8"/>
+    <circle cx="0" cy="0" r="10" fill="url(#patternGrad2)"/>
+    
+    <animateTransform attributeName="transform" type="rotate" values="0 800 200;-360 800 200" dur="25s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Spiral pattern -->
+  <g transform="translate(200, 600)" opacity="0.4">
+    <path d="M0 0 Q20 -20 40 0 Q60 40 20 60 Q-40 80 -60 20 Q-80 -60 0 -80 Q100 -100 120 0" 
+          stroke="url(#patternGrad3)" stroke-width="3" fill="none" filter="url(#patternGlow)"/>
+    <path d="M0 0 Q15 -15 30 0 Q45 30 15 45 Q-30 60 -45 15 Q-60 -45 0 -60 Q75 -75 90 0" 
+          stroke="url(#patternGrad3)" stroke-width="2" fill="none" opacity="0.7"/>
+    <path d="M0 0 Q10 -10 20 0 Q30 20 10 30 Q-20 40 -30 10 Q-40 -30 0 -40 Q50 -50 60 0" 
+          stroke="url(#patternGrad3)" stroke-width="1" fill="none" opacity="0.5"/>
+    
+    <animateTransform attributeName="transform" type="rotate" values="0 200 600;360 200 600" dur="20s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Celtic knot pattern -->
+  <g transform="translate(800, 600)" opacity="0.5">
+    <path d="M-40 -40 Q0 -60 40 -40 Q60 0 40 40 Q0 60 -40 40 Q-60 0 -40 -40" 
+          stroke="url(#patternGrad1)" stroke-width="4" fill="none" filter="url(#patternGlow)"/>
+    <path d="M-40 40 Q0 20 40 40 Q20 0 40 -40 Q0 -20 -40 -40 Q-20 0 -40 40" 
+          stroke="url(#patternGrad1)" stroke-width="4" fill="none"/>
+    
+    <!-- Interwoven effect -->
+    <path d="M-20 -40 Q0 -50 20 -40" stroke="url(#patternGrad1)" stroke-width="6" fill="none" opacity="0.8"/>
+    <path d="M40 -20 Q50 0 40 20" stroke="url(#patternGrad1)" stroke-width="6" fill="none" opacity="0.8"/>
+    <path d="M20 40 Q0 50 -20 40" stroke="url(#patternGrad1)" stroke-width="6" fill="none" opacity="0.8"/>
+    <path d="M-40 20 Q-50 0 -40 -20" stroke="url(#patternGrad1)" stroke-width="6" fill="none" opacity="0.8"/>
+    
+    <animateTransform attributeName="transform" type="rotate" values="0 800 600;360 800 600" dur="35s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Tessellation pattern -->
+  <g transform="translate(500, 400)" opacity="0.3">
+    <!-- Triangular tessellation -->
+    <g fill="url(#patternGrad2)" stroke="url(#patternGrad2)" stroke-width="1">
+      <polygon points="0,-40 35,20 -35,20" opacity="0.4"/>
+      <polygon points="35,20 70,-40 105,20" opacity="0.3"/>
+      <polygon points="-35,20 0,-40 -70,-40" opacity="0.5"/>
+      <polygon points="0,60 35,20 -35,20" opacity="0.4"/>
+      <polygon points="70,60 105,20 35,20" opacity="0.3"/>
+      <polygon points="-70,60 -35,20 -105,20" opacity="0.5"/>
+    </g>
+    
+    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="8s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Dotted grid pattern overlay -->
+  <rect x="0" y="0" width="1200" height="800" fill="url(#circlePattern)" opacity="0.1"/>
+  
+  <!-- Hexagonal overlay -->
+  <rect x="0" y="0" width="1200" height="800" fill="url(#hexPattern)" opacity="0.05"/>
+  
+  <!-- Wave overlay -->
+  <rect x="0" y="0" width="1200" height="800" fill="url(#wavePattern)" opacity="0.08"/>
+  
+  <!-- Floating decorative elements -->
+  <g opacity="0.4">
+    <!-- Small decorative crosses -->
+    <g transform="translate(100, 100)" fill="url(#patternGrad1)">
+      <rect x="-1" y="-8" width="2" height="16"/>
+      <rect x="-8" y="-1" width="16" height="2"/>
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+    </g>
+    
+    <g transform="translate(1100, 300)" fill="url(#patternGrad2)">
+      <rect x="-1" y="-8" width="2" height="16"/>
+      <rect x="-8" y="-1" width="16" height="2"/>
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4s" repeatCount="indefinite"/>
+    </g>
+    
+    <g transform="translate(50, 700)" fill="url(#patternGrad3)">
+      <rect x="-1" y="-8" width="2" height="16"/>
+      <rect x="-8" y="-1" width="16" height="2"/>
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="5s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Small stars -->
+    <g transform="translate(1000, 100)" fill="url(#patternGrad1)">
+      <polygon points="0,-8 2,-2 8,0 2,2 0,8 -2,2 -8,0 -2,-2"/>
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="6s" repeatCount="indefinite"/>
+    </g>
+    
+    <g transform="translate(300, 50)" fill="url(#patternGrad2)">
+      <polygon points="0,-8 2,-2 8,0 2,2 0,8 -2,2 -8,0 -2,-2"/>
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="7s" repeatCount="indefinite"/>
+    </g>
+    
+    <g transform="translate(1150, 700)" fill="url(#patternGrad3)">
+      <polygon points="0,-8 2,-2 8,0 2,2 0,8 -2,2 -8,0 -2,-2"/>
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="8s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  
+  <!-- Connecting lines -->
+  <g opacity="0.2" stroke-width="1" fill="none">
+    <path d="M200 200 Q400 100 800 200" stroke="url(#patternGrad1)">
+      <animate attributeName="d" values="M200 200 Q400 100 800 200;M200 200 Q400 150 800 200;M200 200 Q400 100 800 200" dur="10s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M800 200 Q600 400 200 600" stroke="url(#patternGrad2)">
+      <animate attributeName="d" values="M800 200 Q600 400 200 600;M800 200 Q650 350 200 600;M800 200 Q600 400 200 600" dur="12s" repeatCount="indefinite"/>
+    </path>
+    
+    <path d="M200 600 Q600 500 800 600" stroke="url(#patternGrad3)">
+      <animate attributeName="d" values="M200 600 Q600 500 800 600;M200 600 Q600 550 800 600;M200 600 Q600 500 800 600" dur="14s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

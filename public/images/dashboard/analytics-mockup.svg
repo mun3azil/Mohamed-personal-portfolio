@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="dashBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a" />
+      <stop offset="100%" style="stop-color:#1e293b" />
+    </linearGradient>
+    
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b" />
+      <stop offset="100%" style="stop-color:#334155" />
+    </linearGradient>
+    
+    <linearGradient id="chartGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9" />
+      <stop offset="100%" style="stop-color:#38bdf8" />
+    </linearGradient>
+    
+    <linearGradient id="chartGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6" />
+      <stop offset="100%" style="stop-color:#a78bfa" />
+    </linearGradient>
+    
+    <linearGradient id="chartGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316" />
+      <stop offset="100%" style="stop-color:#fb923c" />
+    </linearGradient>
+    
+    <!-- Filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#dashBg)"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="80" fill="#020617" stroke="#38bdf8" stroke-width="1"/>
+  <text x="40" y="50" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">Portfolio Analytics</text>
+  <text x="1120" y="30" font-family="Inter, sans-serif" font-size="12" fill="#94a3b8" text-anchor="end">Last updated: 2 min ago</text>
+  <text x="1120" y="50" font-family="Inter, sans-serif" font-size="14" font-weight="500" fill="#38bdf8" text-anchor="end">Live Data</text>
+  
+  <!-- Stats Cards Row -->
+  <g transform="translate(40, 100)">
+    <!-- Visitors Card -->
+    <rect x="0" y="0" width="260" height="120" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1" filter="url(#shadow)"/>
+    <circle cx="40" cy="40" r="20" fill="url(#chartGrad1)" filter="url(#glow)"/>
+    <text x="40" y="46" font-family="sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">👥</text>
+    
+    <text x="80" y="30" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Total Visitors</text>
+    <text x="80" y="55" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="#f8fafc">12,847</text>
+    <text x="80" y="75" font-family="Inter, sans-serif" font-size="12" fill="#10b981">+23.5% this month</text>
+    
+    <!-- Page Views Card -->
+    <rect x="280" y="0" width="260" height="120" rx="12" fill="url(#cardGrad)" stroke="#8b5cf6" stroke-width="1" filter="url(#shadow)"/>
+    <circle cx="320" cy="40" r="20" fill="url(#chartGrad2)" filter="url(#glow)"/>
+    <text x="320" y="46" font-family="sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">📊</text>
+    
+    <text x="360" y="30" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Page Views</text>
+    <text x="360" y="55" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="#f8fafc">45,231</text>
+    <text x="360" y="75" font-family="Inter, sans-serif" font-size="12" fill="#10b981">+18.2% this month</text>
+    
+    <!-- Projects Viewed Card -->
+    <rect x="560" y="0" width="260" height="120" rx="12" fill="url(#cardGrad)" stroke="#f97316" stroke-width="1" filter="url(#shadow)"/>
+    <circle cx="600" cy="40" r="20" fill="url(#chartGrad3)" filter="url(#glow)"/>
+    <text x="600" y="46" font-family="sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">🚀</text>
+    
+    <text x="640" y="30" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Projects Viewed</text>
+    <text x="640" y="55" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="#f8fafc">8,492</text>
+    <text x="640" y="75" font-family="Inter, sans-serif" font-size="12" fill="#10b981">+31.7% this month</text>
+    
+    <!-- Contact Forms Card -->
+    <rect x="840" y="0" width="260" height="120" rx="12" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1" filter="url(#shadow)"/>
+    <circle cx="880" cy="40" r="20" fill="#10b981" filter="url(#glow)"/>
+    <text x="880" y="46" font-family="sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">✉️</text>
+    
+    <text x="920" y="30" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Contact Forms</text>
+    <text x="920" y="55" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="#f8fafc">127</text>
+    <text x="920" y="75" font-family="Inter, sans-serif" font-size="12" fill="#10b981">+45.3% this month</text>
+  </g>
+  
+  <!-- Charts Section -->
+  <g transform="translate(40, 250)">
+    <!-- Visitor Chart -->
+    <rect x="0" y="0" width="560" height="300" rx="12" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1" filter="url(#shadow)"/>
+    <text x="20" y="30" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#f8fafc">Visitor Analytics</text>
+    <text x="20" y="50" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Daily visitors over the last 30 days</text>
+    
+    <!-- Chart area -->
+    <rect x="20" y="70" width="520" height="200" rx="8" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+    
+    <!-- Chart lines -->
+    <g stroke-width="3" fill="none">
+      <!-- Visitors line -->
+      <path d="M40 220 Q80 200 120 180 Q160 160 200 140 Q240 120 280 100 Q320 110 360 130 Q400 150 440 170 Q480 190 520 210" 
+            stroke="url(#chartGrad1)" filter="url(#glow)"/>
+      
+      <!-- Page views line -->
+      <path d="M40 240 Q80 230 120 210 Q160 190 200 170 Q240 150 280 130 Q320 140 360 160 Q400 180 440 200 Q480 220 520 240" 
+            stroke="url(#chartGrad2)" opacity="0.7"/>
+    </g>
+    
+    <!-- Chart points -->
+    <g fill="#38bdf8">
+      <circle cx="120" cy="180" r="3" filter="url(#glow)"/>
+      <circle cx="200" cy="140" r="3" filter="url(#glow)"/>
+      <circle cx="280" cy="100" r="3" filter="url(#glow)"/>
+      <circle cx="360" cy="130" r="3" filter="url(#glow)"/>
+      <circle cx="440" cy="170" r="3" filter="url(#glow)"/>
+      <circle cx="520" cy="210" r="3" filter="url(#glow)"/>
+    </g>
+    
+    <!-- Legend -->
+    <rect x="400" y="85" width="120" height="60" rx="6" fill="#1e293b" stroke="#64748b" stroke-width="1"/>
+    <circle cx="415" cy="100" r="4" fill="url(#chartGrad1)"/>
+    <text x="430" y="105" font-family="Inter, sans-serif" font-size="12" fill="#f8fafc">Visitors</text>
+    <circle cx="415" cy="120" r="4" fill="url(#chartGrad2)"/>
+    <text x="430" y="125" font-family="Inter, sans-serif" font-size="12" fill="#f8fafc">Page Views</text>
+  </g>
+  
+  <!-- Top Pages -->
+  <g transform="translate(620, 250)">
+    <rect x="0" y="0" width="540" height="300" rx="12" fill="url(#cardGrad)" stroke="#8b5cf6" stroke-width="1" filter="url(#shadow)"/>
+    <text x="20" y="30" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#f8fafc">Top Pages</text>
+    <text x="20" y="50" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Most visited pages this month</text>
+    
+    <!-- Page list -->
+    <g transform="translate(20, 70)">
+      <!-- Page 1 -->
+      <rect x="0" y="0" width="500" height="40" rx="6" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+      <text x="15" y="25" font-family="Inter, sans-serif" font-size="14" fill="#f8fafc">/ (Home)</text>
+      <text x="450" y="25" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#38bdf8" text-anchor="end">8,247</text>
+      <rect x="350" y="15" width="80" height="10" rx="5" fill="#334155"/>
+      <rect x="350" y="15" width="65" height="10" rx="5" fill="url(#chartGrad1)"/>
+      
+      <!-- Page 2 -->
+      <rect x="0" y="50" width="500" height="40" rx="6" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+      <text x="15" y="75" font-family="Inter, sans-serif" font-size="14" fill="#f8fafc">/projects</text>
+      <text x="450" y="75" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#a78bfa" text-anchor="end">5,892</text>
+      <rect x="350" y="65" width="80" height="10" rx="5" fill="#334155"/>
+      <rect x="350" y="65" width="48" height="10" rx="5" fill="url(#chartGrad2)"/>
+      
+      <!-- Page 3 -->
+      <rect x="0" y="100" width="500" height="40" rx="6" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+      <text x="15" y="125" font-family="Inter, sans-serif" font-size="14" fill="#f8fafc">/about</text>
+      <text x="450" y="125" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#fb923c" text-anchor="end">3,456</text>
+      <rect x="350" y="115" width="80" height="10" rx="5" fill="#334155"/>
+      <rect x="350" y="115" width="32" height="10" rx="5" fill="url(#chartGrad3)"/>
+      
+      <!-- Page 4 -->
+      <rect x="0" y="150" width="500" height="40" rx="6" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+      <text x="15" y="175" font-family="Inter, sans-serif" font-size="14" fill="#f8fafc">/blog</text>
+      <text x="450" y="175" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#10b981" text-anchor="end">2,134</text>
+      <rect x="350" y="165" width="80" height="10" rx="5" fill="#334155"/>
+      <rect x="350" y="165" width="20" height="10" rx="5" fill="#10b981"/>
+      
+      <!-- Page 5 -->
+      <rect x="0" y="200" width="500" height="40" rx="6" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+      <text x="15" y="225" font-family="Inter, sans-serif" font-size="14" fill="#f8fafc">/contact</text>
+      <text x="450" y="225" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#64748b" text-anchor="end">1,287</text>
+      <rect x="350" y="215" width="80" height="10" rx="5" fill="#334155"/>
+      <rect x="350" y="215" width="12" height="10" rx="5" fill="#64748b"/>
+    </g>
+  </g>
+  
+  <!-- Real-time indicator -->
+  <g transform="translate(40, 580)">
+    <rect x="0" y="0" width="300" height="80" rx="12" fill="url(#cardGrad)" stroke="#10b981" stroke-width="1" filter="url(#shadow)"/>
+    <circle cx="40" cy="40" r="20" fill="#10b981" filter="url(#glow)"/>
+    <text x="40" y="46" font-family="sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">🔴</text>
+    
+    <text x="80" y="30" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Active Users</text>
+    <text x="80" y="55" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#f8fafc">23 online now</text>
+    
+    <!-- Live indicator -->
+    <circle cx="250" cy="25" r="5" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="265" y="30" font-family="Inter, sans-serif" font-size="12" fill="#10b981">LIVE</text>
+  </g>
+  
+  <!-- Device breakdown -->
+  <g transform="translate(360, 580)">
+    <rect x="0" y="0" width="300" height="80" rx="12" fill="url(#cardGrad)" stroke="#64748b" stroke-width="1" filter="url(#shadow)"/>
+    <text x="20" y="25" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Device Breakdown</text>
+    
+    <!-- Device stats -->
+    <text x="20" y="45" font-family="Inter, sans-serif" font-size="12" fill="#94a3b8">Desktop: 65%</text>
+    <text x="120" y="45" font-family="Inter, sans-serif" font-size="12" fill="#94a3b8">Mobile: 30%</text>
+    <text x="220" y="45" font-family="Inter, sans-serif" font-size="12" fill="#94a3b8">Tablet: 5%</text>
+    
+    <!-- Progress bars -->
+    <rect x="20" y="55" width="80" height="4" rx="2" fill="#334155"/>
+    <rect x="20" y="55" width="52" height="4" rx="2" fill="#38bdf8"/>
+    
+    <rect x="120" y="55" width="80" height="4" rx="2" fill="#334155"/>
+    <rect x="120" y="55" width="24" height="4" rx="2" fill="#a78bfa"/>
+    
+    <rect x="220" y="55" width="60" height="4" rx="2" fill="#334155"/>
+    <rect x="220" y="55" width="3" height="4" rx="2" fill="#f97316"/>
+  </g>
+  
+  <!-- Performance metrics -->
+  <g transform="translate(680, 580)">
+    <rect x="0" y="0" width="480" height="80" rx="12" fill="url(#cardGrad)" stroke="#f97316" stroke-width="1" filter="url(#shadow)"/>
+    <text x="20" y="25" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#f8fafc">Performance Metrics</text>
+    
+    <!-- Metrics -->
+    <text x="20" y="45" font-family="Inter, sans-serif" font-size="12" fill="#94a3b8">Load Time: 1.2s</text>
+    <text x="130" y="45" font-family="Inter, sans-serif" font-size="12" fill="#94a3b8">LCP: 2.1s</text>
+    <text x="220" y="45" font-family="Inter, sans-serif" font-size="12" fill="#94a3b8">FID: 45ms</text>
+    <text x="310" y="45" font-family="Inter, sans-serif" font-size="12" fill="#94a3b8">CLS: 0.08</text>
+    <text x="400" y="45" font-family="Inter, sans-serif" font-size="12" fill="#10b981">Score: 95/100</text>
+  </g>
+</svg>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Tech icon gradients -->
+    <linearGradient id="reactGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#61dafb" />
+      <stop offset="100%" style="stop-color:#21d4fd" />
+    </linearGradient>
+    
+    <linearGradient id="nextGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000" />
+      <stop offset="100%" style="stop-color:#333333" />
+    </linearGradient>
+    
+    <linearGradient id="tsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3178c6" />
+      <stop offset="100%" style="stop-color:#235a97" />
+    </linearGradient>
+    
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#68a063" />
+      <stop offset="100%" style="stop-color:#3c5e37" />
+    </linearGradient>
+    
+    <linearGradient id="tailwindGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8" />
+      <stop offset="100%" style="stop-color:#0ea5e9" />
+    </linearGradient>
+    
+    <linearGradient id="framerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff0055" />
+      <stop offset="100%" style="stop-color:#cc0044" />
+    </linearGradient>
+    
+    <!-- Glow effects -->
+    <filter id="iconGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#020617"/>
+  
+  <!-- React Icon -->
+  <g transform="translate(150, 150)">
+    <circle cx="50" cy="50" r="60" fill="none" stroke="url(#reactGrad)" stroke-width="3" opacity="0.3"/>
+    <circle cx="50" cy="50" r="40" fill="none" stroke="url(#reactGrad)" stroke-width="4" filter="url(#iconGlow)"/>
+    <ellipse cx="50" cy="50" rx="80" ry="30" fill="none" stroke="url(#reactGrad)" stroke-width="3" transform="rotate(60 50 50)"/>
+    <ellipse cx="50" cy="50" rx="80" ry="30" fill="none" stroke="url(#reactGrad)" stroke-width="3" transform="rotate(-60 50 50)"/>
+    <ellipse cx="50" cy="50" rx="80" ry="30" fill="none" stroke="url(#reactGrad)" stroke-width="3"/>
+    <circle cx="50" cy="50" r="8" fill="url(#reactGrad)" filter="url(#iconGlow)"/>
+    <animateTransform attributeName="transform" type="rotate" values="0 50 50;360 50 50" dur="10s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Next.js Icon -->
+  <g transform="translate(350, 150)">
+    <rect x="10" y="10" width="80" height="80" rx="15" fill="url(#nextGrad)" filter="url(#iconGlow)"/>
+    <rect x="15" y="15" width="70" height="70" rx="10" fill="#ffffff"/>
+    <text x="50" y="65" font-family="Inter, sans-serif" font-size="36" font-weight="700" fill="#000000" text-anchor="middle">N</text>
+    <animateTransform attributeName="transform" type="translate" values="350,150;370,130;350,150" dur="4s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- TypeScript Icon -->
+  <g transform="translate(550, 150)">
+    <rect x="10" y="10" width="80" height="80" rx="8" fill="url(#tsGrad)" filter="url(#iconGlow)"/>
+    <text x="50" y="65" font-family="Inter, sans-serif" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">TS</text>
+    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="3s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Node.js Icon -->
+  <g transform="translate(750, 150)">
+    <circle cx="50" cy="50" r="40" fill="url(#nodeGrad)" filter="url(#iconGlow)"/>
+    <path d="M30 35 L50 25 L70 35 L70 65 L50 75 L30 65 Z" fill="#ffffff" opacity="0.9"/>
+    <text x="50" y="55" font-family="monospace" font-size="16" font-weight="700" fill="url(#nodeGrad)" text-anchor="middle">JS</text>
+    <animate attributeName="opacity" values="1;0.7;1" dur="2s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Tailwind CSS Icon -->
+  <g transform="translate(950, 150)">
+    <rect x="10" y="10" width="80" height="80" rx="12" fill="url(#tailwindGrad)" filter="url(#iconGlow)"/>
+    <path d="M25 40 Q35 30 50 40 Q60 35 70 40 Q75 45 70 50 Q60 55 50 50 Q40 55 30 50 Q25 45 25 40 Z" fill="#ffffff"/>
+    <path d="M30 55 Q40 50 50 55 Q60 50 70 55 Q75 60 70 65 Q60 70 50 65 Q40 70 30 65 Q25 60 30 55 Z" fill="#ffffff" opacity="0.7"/>
+    <animateTransform attributeName="transform" type="rotate" values="0 50 50;360 50 50" dur="8s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Framer Motion Icon -->
+  <g transform="translate(150, 350)">
+    <rect x="10" y="10" width="80" height="80" rx="10" fill="url(#framerGrad)" filter="url(#iconGlow)"/>
+    <polygon points="30,30 70,30 50,50 70,70 30,70 50,50" fill="#ffffff"/>
+    <animateTransform attributeName="transform" type="translate" values="150,350;170,330;150,350" dur="5s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- MongoDB Icon -->
+  <g transform="translate(350, 350)">
+    <ellipse cx="50" cy="50" rx="35" ry="45" fill="#4db33d" filter="url(#iconGlow)"/>
+    <ellipse cx="50" cy="50" rx="25" ry="35" fill="#68c83f"/>
+    <path d="M45 25 Q50 20 55 25 L55 75 Q50 80 45 75 Z" fill="#ffffff" opacity="0.8"/>
+    <animate attributeName="opacity" values="1;0.8;1" dur="3s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- PostgreSQL Icon -->
+  <g transform="translate(550, 350)">
+    <ellipse cx="50" cy="50" rx="40" ry="35" fill="#336791" filter="url(#iconGlow)"/>
+    <ellipse cx="50" cy="45" rx="30" ry="25" fill="#ffffff"/>
+    <text x="50" y="55" font-family="monospace" font-size="14" font-weight="700" fill="#336791" text-anchor="middle">SQL</text>
+    <animateTransform attributeName="transform" type="scale" values="1;1.05;1" dur="4s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Docker Icon -->
+  <g transform="translate(750, 350)">
+    <rect x="10" y="10" width="80" height="80" rx="8" fill="#2496ed" filter="url(#iconGlow)"/>
+    <rect x="20" y="30" width="15" height="12" fill="#ffffff"/>
+    <rect x="40" y="30" width="15" height="12" fill="#ffffff"/>
+    <rect x="60" y="30" width="15" height="12" fill="#ffffff"/>
+    <rect x="20" y="45" width="15" height="12" fill="#ffffff"/>
+    <rect x="40" y="45" width="15" height="12" fill="#ffffff"/>
+    <rect x="60" y="45" width="15" height="12" fill="#ffffff"/>
+    <rect x="30" y="60" width="40" height="8" rx="4" fill="#ffffff"/>
+    <animate attributeName="opacity" values="1;0.7;1" dur="6s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Git Icon -->
+  <g transform="translate(950, 350)">
+    <circle cx="50" cy="50" r="40" fill="#f05032" filter="url(#iconGlow)"/>
+    <path d="M25 50 L50 25 L75 50 L50 75 Z" fill="#ffffff"/>
+    <circle cx="40" cy="40" r="8" fill="#f05032"/>
+    <circle cx="60" cy="60" r="8" fill="#f05032"/>
+    <path d="M40 40 L60 60" stroke="#f05032" stroke-width="3"/>
+    <animateTransform attributeName="transform" type="rotate" values="0 50 50;360 50 50" dur="12s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- VS Code Icon -->
+  <g transform="translate(150, 550)">
+    <rect x="10" y="10" width="80" height="80" rx="8" fill="#007acc" filter="url(#iconGlow)"/>
+    <polygon points="25,25 75,40 75,60 25,75 25,65 60,50 25,35" fill="#ffffff"/>
+    <animateTransform attributeName="transform" type="translate" values="150,550;170,530;150,550" dur="7s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Figma Icon -->
+  <g transform="translate(350, 550)">
+    <rect x="10" y="10" width="80" height="80" rx="12" fill="#f24e1e" filter="url(#iconGlow)"/>
+    <circle cx="35" cy="35" r="15" fill="#ff7262"/>
+    <circle cx="65" cy="35" r="15" fill="#a259ff"/>
+    <circle cx="35" cy="65" r="15" fill="#1abcfe"/>
+    <circle cx="65" cy="65" r="15" fill="#0acf83"/>
+    <circle cx="50" cy="50" r="8" fill="#ffffff"/>
+    <animate attributeName="opacity" values="1;0.8;1" dur="4s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Vercel Icon -->
+  <g transform="translate(550, 550)">
+    <rect x="10" y="10" width="80" height="80" rx="8" fill="#000000" filter="url(#iconGlow)"/>
+    <polygon points="50,25 75,65 25,65" fill="#ffffff"/>
+    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="5s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- GitHub Icon -->
+  <g transform="translate(750, 550)">
+    <circle cx="50" cy="50" r="40" fill="#24292e" filter="url(#iconGlow)"/>
+    <path d="M50 15 C30 15 15 30 15 50 C15 66 25 79 39 84 C41 84 42 83 42 81 L42 75 C35 77 33 72 33 72 C32 70 30 69 30 69 C27 67 30 67 30 67 C33 67 35 70 35 70 C38 75 43 73 42 72 C42 71 43 70 44 69 C32 68 25 62 25 50 C25 46 27 43 30 43 C30 42 29 39 31 35 C31 35 34 34 42 39 C44 38 47 38 50 38 C53 38 56 38 58 39 C66 34 69 35 69 35 C71 39 70 42 70 43 C73 43 75 46 75 50 C75 62 68 68 56 69 C57 70 58 71 58 75 L58 81 C58 83 59 84 61 84 C75 79 85 66 85 50 C85 30 70 15 50 15 Z" fill="#ffffff"/>
+    <animateTransform attributeName="transform" type="rotate" values="0 50 50;360 50 50" dur="15s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Floating code symbols -->
+  <g opacity="0.4" font-family="monospace" font-size="24" fill="#38bdf8">
+    <text x="100" y="100" transform="rotate(-15 100 100)">{ }</text>
+    <text x="1100" y="200" transform="rotate(20 1100 200)">&lt;/&gt;</text>
+    <text x="50" y="400" transform="rotate(-10 50 400)">( )</text>
+    <text x="1150" y="500" transform="rotate(15 1150 500)">[ ]</text>
+    <text x="600" y="100" transform="rotate(25 600 100)">===</text>
+    <text x="200" y="750" transform="rotate(-20 200 750)">!=</text>
+    <text x="1000" y="750" transform="rotate(10 1000 750)">=&gt;</text>
+    
+    <!-- Animated symbols -->
+    <text x="300" y="300" fill="#a78bfa" transform="rotate(0 300 300)">$</text>
+    <animateTransform attributeName="transform" type="rotate" values="0 300 300;360 300 300" dur="8s" repeatCount="indefinite"/>
+    
+    <text x="900" y="400" fill="#f97316" transform="rotate(0 900 400)">#</text>
+    <animateTransform attributeName="transform" type="rotate" values="0 900 400;-360 900 400" dur="10s" repeatCount="indefinite"/>
+  </g>
+</svg>

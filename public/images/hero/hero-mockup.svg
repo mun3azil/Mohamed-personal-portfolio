@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background gradients -->
+    <linearGradient id="heroBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a" />
+      <stop offset="50%" style="stop-color:#1e293b" />
+      <stop offset="100%" style="stop-color:#020617" />
+    </linearGradient>
+    
+    <linearGradient id="codeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#38bdf8;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.5" />
+    </linearGradient>
+    
+    <!-- Filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#heroBg)"/>
+  
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#38bdf8" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#grid)"/>
+  
+  <!-- Floating code interface (left side) -->
+  <g transform="translate(50, 100)">
+    <!-- Terminal window -->
+    <rect x="0" y="0" width="400" height="300" rx="10" fill="#1e293b" stroke="#38bdf8" stroke-width="2" filter="url(#glow)"/>
+    
+    <!-- Terminal header -->
+    <rect x="0" y="0" width="400" height="30" rx="10" fill="#0f172a"/>
+    <circle cx="20" cy="15" r="5" fill="#ef4444"/>
+    <circle cx="40" cy="15" r="5" fill="#f59e0b"/>
+    <circle cx="60" cy="15" r="5" fill="#10b981"/>
+    
+    <!-- Code lines -->
+    <text x="20" y="60" font-family="monospace" font-size="14" fill="#38bdf8">$ npm run dev</text>
+    <text x="20" y="85" font-family="monospace" font-size="12" fill="#10b981">✓ Ready in 2.3s</text>
+    <text x="20" y="110" font-family="monospace" font-size="12" fill="#64748b">Local: http://localhost:3000</text>
+    
+    <!-- Animated cursor -->
+    <rect x="20" y="130" width="2" height="15" fill="#38bdf8">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Code snippet -->
+    <text x="20" y="160" font-family="monospace" font-size="11" fill="#a78bfa">const</text>
+    <text x="70" y="160" font-family="monospace" font-size="11" fill="#f8fafc">developer</text>
+    <text x="150" y="160" font-family="monospace" font-size="11" fill="#64748b">=</text>
+    <text x="170" y="160" font-family="monospace" font-size="11" fill="#fbbf24">"Mohamed"</text>
+    
+    <text x="20" y="180" font-family="monospace" font-size="11" fill="#a78bfa">const</text>
+    <text x="70" y="180" font-family="monospace" font-size="11" fill="#f8fafc">skills</text>
+    <text x="120" y="180" font-family="monospace" font-size="11" fill="#64748b">=</text>
+    <text x="140" y="180" font-family="monospace" font-size="11" fill="#38bdf8">[</text>
+    <text x="150" y="180" font-family="monospace" font-size="11" fill="#fbbf24">"React"</text>
+    <text x="200" y="180" font-family="monospace" font-size="11" fill="#64748b">,</text>
+    <text x="210" y="180" font-family="monospace" font-size="11" fill="#fbbf24">"Next.js"</text>
+    <text x="270" y="180" font-family="monospace" font-size="11" fill="#38bdf8">]</text>
+    
+    <text x="20" y="200" font-family="monospace" font-size="11" fill="#f8fafc">console.log</text>
+    <text x="100" y="200" font-family="monospace" font-size="11" fill="#64748b">(</text>
+    <text x="110" y="200" font-family="monospace" font-size="11" fill="#fbbf24">"Building amazing experiences"</text>
+    <text x="300" y="200" font-family="monospace" font-size="11" fill="#64748b">)</text>
+  </g>
+  
+  <!-- Central avatar area -->
+  <g transform="translate(500, 200)">
+    <!-- Glowing circle background -->
+    <circle cx="100" cy="100" r="120" fill="url(#codeGlow)" opacity="0.2" filter="url(#glow)"/>
+    <circle cx="100" cy="100" r="100" fill="none" stroke="url(#codeGlow)" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Developer avatar (simplified) -->
+    <circle cx="100" cy="80" r="40" fill="#fbbf24"/>
+    <rect x="70" y="110" width="60" height="50" rx="10" fill="#1e293b"/>
+    
+    <!-- Glasses -->
+    <circle cx="85" cy="75" r="12" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="115" cy="75" r="12" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M97 75 L103 75" stroke="#38bdf8" stroke-width="2"/>
+  </g>
+  
+  <!-- Floating tech icons -->
+  <g opacity="0.7">
+    <!-- React icon -->
+    <g transform="translate(200, 400)">
+      <circle cx="0" cy="0" r="20" fill="none" stroke="#38bdf8" stroke-width="2"/>
+      <ellipse cx="0" cy="0" rx="35" ry="15" fill="none" stroke="#38bdf8" stroke-width="2" transform="rotate(60)"/>
+      <ellipse cx="0" cy="0" rx="35" ry="15" fill="none" stroke="#38bdf8" stroke-width="2" transform="rotate(-60)"/>
+      <circle cx="0" cy="0" r="3" fill="#38bdf8"/>
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="10s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- Next.js icon -->
+    <g transform="translate(800, 150)">
+      <rect x="-15" y="-15" width="30" height="30" rx="5" fill="#f8fafc" stroke="#1e293b" stroke-width="2"/>
+      <text x="0" y="5" font-family="monospace" font-size="12" fill="#1e293b" text-anchor="middle">N</text>
+      <animateTransform attributeName="transform" type="translate" values="800,150;820,130;800,150" dur="4s" repeatCount="indefinite"/>
+    </g>
+    
+    <!-- TypeScript icon -->
+    <g transform="translate(900, 500)">
+      <rect x="-12" y="-12" width="24" height="24" rx="3" fill="#3178c6"/>
+      <text x="0" y="4" font-family="monospace" font-size="10" fill="#ffffff" text-anchor="middle">TS</text>
+      <animateTransform attributeName="transform" type="translate" values="900,500;880,520;900,500" dur="6s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  
+  <!-- Dual language text -->
+  <g transform="translate(700, 400)">
+    <!-- English text -->
+    <text x="0" y="0" font-family="Inter, sans-serif" font-size="32" font-weight="700" fill="#f8fafc">Full Stack Developer</text>
+    <text x="0" y="40" font-family="Inter, sans-serif" font-size="18" fill="#94a3b8">Building modern web experiences</text>
+    
+    <!-- Arabic text -->
+    <text x="0" y="100" font-family="Inter, sans-serif" font-size="24" font-weight="600" fill="#a78bfa" text-anchor="end">مطور ويب متكامل</text>
+    <text x="0" y="130" font-family="Inter, sans-serif" font-size="16" fill="#94a3b8" text-anchor="end">بناء تجارب ويب حديثة</text>
+  </g>
+  
+  <!-- Floating particles -->
+  <g opacity="0.4">
+    <circle cx="100" cy="200" r="2" fill="#38bdf8">
+      <animate attributeName="cy" values="200;180;200" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1000" cy="300" r="2" fill="#a78bfa">
+      <animate attributeName="cy" values="300;280;300" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="600" r="2" fill="#f97316">
+      <animate attributeName="cy" values="600;580;600" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Bottom navigation hint -->
+  <g transform="translate(580, 720)">
+    <circle cx="20" cy="20" r="15" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.6"/>
+    <path d="M15 15 L20 20 L25 15" stroke="#38bdf8" stroke-width="2" fill="none" opacity="0.6">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,5;0,0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <text x="50" y="25" font-family="Inter, sans-serif" font-size="14" fill="#94a3b8">Scroll to explore</text>
+  </g>
+</svg>

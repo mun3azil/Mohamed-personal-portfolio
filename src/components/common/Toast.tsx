@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import styles from './Toast.module.css';
 
 
 export type ToastType = 'success' | 'error' | 'info' | 'warning';
@@ -122,22 +123,22 @@ const Toast: React.FC<ToastProps> = ({
     }
   };
   
-  // Get position styles
-  const getPositionStyles = (): React.CSSProperties => {
+  // Get position CSS class based on position prop
+  const getPositionClassName = (): string => {
     switch (position) {
       case 'top-left':
-        return { top: '1rem', left: '1rem' };
+        return styles.toastTopLeft;
       case 'top-center':
-        return { top: '1rem', left: '50%', transform: 'translateX(-50%)' };
+        return styles.toastTopCenter;
       case 'top-right':
-        return { top: '1rem', right: '1rem' };
+        return styles.toastTopRight;
       case 'bottom-left':
-        return { bottom: '1rem', left: '1rem' };
+        return styles.toastBottomLeft;
       case 'bottom-right':
-        return { bottom: '1rem', right: '1rem' };
+        return styles.toastBottomRight;
       case 'bottom-center':
       default:
-        return { bottom: '1rem', left: '50%', transform: 'translateX(-50%)' };
+        return styles.toastBottomCenter;
     }
   };
   
@@ -160,44 +161,27 @@ const Toast: React.FC<ToastProps> = ({
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className={`toast ${type} ${className}`}
+          className={`${styles.toast} ${styles[type]} ${getPositionClassName()} ${className}`}
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 50 }}
           transition={{ duration: 0.3 }}
           style={{
-            position: 'fixed',
-            zIndex: 9999,
-            display: 'flex',
-            alignItems: 'center',
-            padding: '0.75rem 1rem',
-            borderRadius: '0.375rem',
-            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-            color: 'white',
             backgroundColor: getBackgroundColor(),
-            maxWidth: '24rem',
-            ...getPositionStyles(),
           }}
           data-testid={`toast-${type}`}
         >
-          <div className="toast-icon" style={{ marginRight: '0.5rem' }}>
+          <div className={styles.toastIcon}>
             {getIcon()}
           </div>
-          <div className="toast-message" style={{ flex: 1 }}>
+          <div className={styles.toastMessage}>
             {message}
           </div>
           {showCloseButton && (
             <button
-              className="toast-close"
+              type="button"
+              className={styles.toastClose}
               onClick={handleClose}
-              style={{
-                background: 'transparent',
-                border: 'none',
-                color: 'white',
-                cursor: 'pointer',
-                marginLeft: '0.5rem',
-                padding: '0.25rem',
-              }}
               aria-label="Close toast"
               data-testid="toast-close-button"
             >
