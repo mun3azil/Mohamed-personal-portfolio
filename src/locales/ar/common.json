@@ -60,12 +60,28 @@
   "contact": {
     "title": "اتصل بي",
     "subtitle": "لنعمل معاً",
+    "letConnect": "دعنا نتواصل",
+    "followMe": "تابعني على وسائل التواصل الاجتماعي",
+    "successTitle": "تم إرسال الرسالة!",
+    "errorTitle": "خطأ",
     "form": {
       "name": "اسمك",
       "email": "بريدك الإلكتروني",
       "subject": "الموضوع",
       "message": "رسالتك",
-      "send": "إرسال الرسالة"
+      "send": "إرسال الرسالة",
+      "namePlaceholder": "أدخل اسمك",
+      "emailPlaceholder": "أدخل بريدك الإلكتروني",
+      "subjectPlaceholder": "ما هو موضوع رسالتك؟",
+      "messagePlaceholder": "اكتب رسالتك هنا...",
+      "errors": {
+        "nameRequired": "الاسم مطلوب",
+        "emailRequired": "البريد الإلكتروني مطلوب",
+        "emailInvalid": "يرجى إدخال بريد إلكتروني صحيح",
+        "subjectRequired": "الموضوع مطلوب",
+        "messageRequired": "الرسالة مطلوبة",
+        "messageShort": "يجب أن تكون الرسالة 10 أحرف على الأقل"
+      }
     },
     "success": "تم إرسال رسالتك بنجاح!",
     "error": "حدث خطأ أثناء إرسال رسالتك. يرجى المحاولة مرة أخرى."

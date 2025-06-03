@@ -60,12 +60,28 @@
   "contact": {
     "title": "Contact Me",
     "subtitle": "Let's work together",
+    "letConnect": "Let's Connect",
+    "followMe": "Follow Me on Social Media",
+    "successTitle": "Message Sent!",
+    "errorTitle": "Error",
     "form": {
       "name": "Your Name",
       "email": "Your Email",
       "subject": "Subject",
       "message": "Your Message",
-      "send": "Send Message"
+      "send": "Send Message",
+      "namePlaceholder": "Enter your name",
+      "emailPlaceholder": "Enter your email address",
+      "subjectPlaceholder": "What is this regarding?",
+      "messagePlaceholder": "Write your message here...",
+      "errors": {
+        "nameRequired": "Name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "subjectRequired": "Subject is required",
+        "messageRequired": "Message is required",
+        "messageShort": "Message must be at least 10 characters"
+      }
     },
     "success": "Your message has been sent successfully!",
     "error": "There was an error sending your message. Please try again."
